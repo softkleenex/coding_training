@@ -39,7 +39,7 @@ for i in range(1, n):
     
     
 for i in range(1, n-1):
-    case2 = (nonreversed_h[n-1] - honey[i]- honey[n - 1]) + (nonreversed_h[i-1])#두번쨰 벌은 0 ~ i -1낒;ㅇ,;
+    case2 = (sum(honey) - honey[i]- honey[n - 1]) + (nonreversed_h[i-1])#두번쨰 벌은 0 ~ i -1낒;ㅇ,;
     maxh = max(maxh, case2)
     # print(case2, maxh)
  
