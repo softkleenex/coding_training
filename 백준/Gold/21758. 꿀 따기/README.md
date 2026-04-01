@@ -4,7 +4,7 @@
 
 ### 성능 요약
 
-메모리: 111560 KB, 시간: 168 ms
+메모리: 132220 KB, 시간: 132 ms
 
 ### 분류
 
@@ -12,17 +12,17 @@
 
 ### 제출 일자
 
-2025년 12월 21일 23:46:09
+2025년 12월 21일 23:51:31
 
 ### 문제 설명
 
 <p>아래와 같이 좌우로 $N$개의 장소가 있다.</p>
 
-<p style="text-align: center;"><img alt="" src="" style="width: 353px; height: 56px;"></p>
+<p style="text-align: center;"><img alt="" src="https://upload.acmicpc.net/7eac9e04-f000-482d-9ad5-05cc2363df05/-/preview/" style="width: 353px; height: 56px;"></p>
 
 <p>장소들 중 서로 다른 두 곳을 골라서 벌을 한 마리씩 둔다. 또, 다른 한 장소를 골라서 벌통을 둔다. 아래 그림에서 연한 회색의 장소는 벌이 있는 장소이고 진한 회색의 장소는 벌통이 있는 장소이다.</p>
 
-<p style="text-align: center;"><img alt="" src="" style="width: 353px; height: 56px;"></p>
+<p style="text-align: center;"><img alt="" src="https://upload.acmicpc.net/8ca82402-c379-40cd-902d-9ecc24c35d1f/-/preview/" style="width: 353px; height: 56px;"></p>
 
 <p>두 마리 벌은 벌통으로 똑바로 날아가면서 지나가는 모든 칸에서 꿀을 딴다. 각 장소에 적힌 숫자는 벌이 지나가면서 꿀을 딸 수 있는 양이다.</p>
 
@@ -33,11 +33,11 @@
 
 <p>위의 그림과 같이 배치된 경우 두 마리의 벌 모두 $4 + 1 + 4 + 9 + 9 = 27$의 꿀을 따서, 전체 꿀의 양은 54가 된다.</p>
 
-<p style="text-align: center;"><img alt="" src="" style="width: 353px; height: 56px;"></p>
+<p style="text-align: center;"><img alt="" src="https://upload.acmicpc.net/a9794fde-7a1b-4c4d-82b5-f1b8e7daaa73/-/preview/" style="width: 353px; height: 56px;"></p>
 
 <p>위의 그림과 같이 배치된 경우 왼쪽 장소에서 출발한 벌은 $9 + 4 + 4 + 9 + 9 = 35$의 꿀을 따고 오른쪽 장소에서 출발한 벌은 $4 + 9 + 9 = 22$의 꿀을 따므로, 전체 꿀의 양은 $57$이 된다.</p>
 
-<p style="text-align: center;"><img alt="" src="" style="width: 353px; height: 56px;"></p>
+<p style="text-align: center;"><img alt="" src="https://upload.acmicpc.net/5b264635-fc6b-498a-af76-bbe08197ab32/-/preview/" style="width: 353px; height: 56px;"></p>
 
 <p>위의 그림과 같은 경우는 전체 꿀의 양이 31이 된다.</p>
 
