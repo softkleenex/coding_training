@@ -44,14 +44,5 @@ N = int(input())
 words = list(set([input() for i in range(0, N)]))
 
 
-words.sort()
-
-count = 0
-
-for i in range(0 , 51):
-    for i2 in words:
-        if len(i2) == i:
-            print(i2, end = '')
-            count += 1
-            if count != len(words):
-                print()
+sorted_words = sorted(words, key = lambda x: (len(x) , x))
+print('\n'.join(sorted_words))
