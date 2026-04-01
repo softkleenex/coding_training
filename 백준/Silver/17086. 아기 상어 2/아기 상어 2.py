@@ -29,6 +29,8 @@ while q:
             q.append((ny, nx))
 
 
+if any(i2 == -1 for i in dist for i2 in i ):
+    exit(0)
 
 ans = max(map(max, dist))
 
