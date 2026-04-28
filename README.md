@@ -16,20 +16,36 @@
 
 ---
 
-## 📝 소개
+## 📝 소개 (Introduction)
 
-이 저장소는 백준(Baekjoon), AtCoder 등 알고리즘 플랫폼에서 해결한 문제들의 소스 코드와 저만의 풀이(해설)를 기록하는 공간입니다. 동시에 작성된 마크다운(`.md`) 파일들은 **GitHub Pages**를 통해 정적 블로그 웹사이트로 자동 배포됩니다.
+안녕하세요! 이 저장소는 제가 해결한 알고리즘 문제들의 소스 코드와 저만의 풀이(해설)를 기록하는 공간입니다. 
+동시에 작성된 마크다운(`.md`) 파일들은 **GitHub Pages**를 통해 정적 블로그 웹사이트로 자동 배포되어 나만의 포트폴리오로 활용됩니다.
 
-## ⚙️ 자동화 파이프라인 (Workflow)
+단순한 코드 저장소가 아닌, **완전 자동화된 CI/CD 파이프라인**을 갖춘 현대적인 개발 블로그 시스템입니다.
 
-본 블로그는 개발자의 개입을 최소화하기 위해 완전 자동화된 파이프라인으로 운영됩니다.
+<div align="center">
+  <img src="https://img.shields.io/badge/Python-3776AB?style=for-the-badge&logo=python&logoColor=white">
+  <img src="https://img.shields.io/badge/TypeScript-3178C6?style=for-the-badge&logo=typescript&logoColor=white">
+  <img src="https://img.shields.io/badge/React-20232A?style=for-the-badge&logo=react&logoColor=61DAFB">
+  <img src="https://img.shields.io/badge/GitHub_Actions-2088FF?style=for-the-badge&logo=github-actions&logoColor=white">
+  <img src="https://img.shields.io/badge/Obsidian-483699?style=for-the-badge&logo=obsidian&logoColor=white">
+  <img src="https://img.shields.io/badge/Markdown-000000?style=for-the-badge&logo=markdown&logoColor=white">
+</div>
+
+---
+
+## ⚙️ 자동화 파이프라인 (Automated Workflow)
+
+이 블로그 시스템은 개발자의 개입을 최소화하도록 설계되었습니다.
 
 1. **Solve & Auto-Push:** [BaekjoonHub](https://github.com/BaekjoonHub/BaekjoonHub) 익스텐션을 통해 플랫폼에서 문제를 해결하면 자동으로 저장소에 소스 코드가 커밋됩니다.
-2. **Auto-Formatting:** 새로운 코드가 푸시되면 GitHub Action 봇이 파이썬 스크립트(`scripts/format_problems.py`)를 실행하여, 소스 코드를 읽어오고 SEO 및 블로그 렌더링에 최적화된 마크다운 템플릿을 자동으로 생성/병합합니다.
-3. **Review & Write:** 로컬 PC 또는 모바일 기기에서 **옵시디언(Obsidian)** 을 통해 동기화된 파일을 열고, `💡 해결 방법` 섹션에 본인만의 풀이 로직과 회고를 기록합니다.
-4. **Deploy:** 작성된 글을 `git push`하면, Quartz 엔진이 마크다운 파일들을 연결망(Graph) 구조를 가진 아름다운 HTML 웹사이트로 빌드하여 배포합니다.
+2. **Auto-Formatting:** 새로운 코드가 푸시되면 봇이 파이썬 스크립트(`scripts/format_problems.py`)를 실행하여, 소스 코드를 SEO에 최적화된 마크다운 템플릿 안으로 병합합니다.
+3. **Review & Write:** 로컬 PC 또는 모바일에서 **옵시디언(Obsidian)** 을 켜고, 템플릿 안의 `💡 해결 방법` 영역에 회고를 기록합니다.
+4. **Deploy:** 수정한 글을 `git push`하면, [Quartz 4](https://quartz.jzhao.xyz/) 엔진이 전체 지식 연결망(Graph)을 가진 HTML 웹사이트로 빌드하여 배포합니다.
 
-## 📊 성과 대시보드
+---
+
+## 📊 성과 대시보드 (Dashboard)
 
 <!-- problems:start -->
 ### 🏆 Algorithm Solving Status
@@ -429,23 +445,18 @@
 </details>
 <!-- problems:end -->
 
-## 📂 디렉토리 구조
+---
+
+## 📂 디렉토리 구조 (Directory Structure)
 
 ```text
-.
+coding_training/
 ├── content/
-│   ├── 백준/         # 백준(BOJ) 문제 풀이 (Bronze, Silver, Gold 등 난이도별 분류)
-│   ├── atcoder/      # AtCoder 문제 풀이 모음
-│   ├── posts/        # 알고리즘 외 자유로운 개발/기술 포스트 작성 공간
-│   └── index.md      # 블로그 메인 대문(Landing Page) 파일
-├── scripts/          # 문제 포맷팅 및 파이프라인 자동화용 Python 스크립트
-├── quartz/           # 블로그 렌더링 엔진 (Quartz 4) 코어 소스
-└── quartz.config.ts  # 블로그 환경 설정 (이름, 테마, SEO 설정)
+│   ├── 백준/         # BOJ 문제 풀이 모음 (난이도별 분류)
+│   ├── atcoder/      # AtCoder 콘테스트 문제 풀이
+│   ├── posts/        # 기술 블로그 포스트 및 에세이
+│   └── index.md      # 블로그 대문(Landing Page)
+├── scripts/          # 문제 템플릿 포맷팅 및 통계 갱신 Python 스크립트
+├── quartz/           # 블로그 렌더링 엔진 코어 (TypeScript/React)
+└── quartz.config.ts  # 블로그 설정 파일 (SEO, 테마, 플러그인)
 ```
-
-## 💻 Tech Stack
-
-*   **Note-taking:** Obsidian
-*   **Static Site Generator (SSG):** Quartz 4 (Node.js / React)
-*   **Automation:** GitHub Actions, Python 3
-*   **Hosting:** GitHub Pages
