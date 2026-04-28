@@ -25,7 +25,9 @@ jobs:
           python-version: '3.x'
 
       - name: Run Formatter Script
-        run: python scripts/format_problems.py
+        run: |
+          python scripts/format_problems.py
+          python scripts/update_readme.py
 
       - name: Commit changes
         run: |

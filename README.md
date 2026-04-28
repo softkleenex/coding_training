@@ -29,6 +29,24 @@
 3. **Review & Write:** 로컬 PC 또는 모바일 기기에서 **옵시디언(Obsidian)** 을 통해 동기화된 파일을 열고, `💡 해결 방법` 섹션에 본인만의 풀이 로직과 회고를 기록합니다.
 4. **Deploy:** 작성된 글을 `git push`하면, Quartz 엔진이 마크다운 파일들을 연결망(Graph) 구조를 가진 아름다운 HTML 웹사이트로 빌드하여 배포합니다.
 
+## 📊 성과 대시보드
+
+<!-- problems:start -->
+### 🏆 Algorithm Solving Status
+
+**Total Solved: 383 Problems**
+
+| Platform | Difficulty | Solved Count |
+| :--- | :--- | :---: |
+| **Baekjoon** | 🥉 Bronze | 192 |
+| | 🥈 Silver | 167 |
+| | 🥇 Gold | 16 |
+| | 💎 Platinum | 6 |
+| | ❔ Unrated | 1 |
+| | **Total** | **382** |
+| **AtCoder** | - | **1** |
+<!-- problems:end -->
+
 ## 📂 디렉토리 구조
 
 ```text
