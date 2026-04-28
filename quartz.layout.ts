@@ -5,7 +5,17 @@ import * as Component from "./quartz/components"
 export const sharedPageComponents: SharedLayout = {
   head: Component.Head(),
   header: [],
-  afterBody: [],
+  afterBody: [
+    Component.Comments({
+      provider: 'giscus',
+      options: {
+        repo: 'softkleenex/coding_training',
+        repoId: 'R_kgDOR17fXA',
+        category: 'General',
+        categoryId: 'DIC_kwDOR17fXM4C72mQ',
+      }
+    }),
+  ],
   footer: Component.Footer({
     links: {
       GitHub: "https://github.com/softkleenex",
