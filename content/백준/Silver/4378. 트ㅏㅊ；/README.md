@@ -1,0 +1,72 @@
+---
+title: "[Silver V] 트ㅏㅊ; - 4378"
+tags: ["백준", "Silver V"]
+---
+
+# [Silver V] 트ㅏㅊ; - 4378 
+
+[문제 링크](https://www.acmicpc.net/problem/4378) 
+
+### 성능 요약
+
+메모리: 108384 KB, 시간: 88 ms
+
+### 분류
+
+구현, 문자열, 애드 혹
+
+### 제출 일자
+
+2026년 04월 25일 22:04:59
+
+### 문제 설명
+
+<p style="text-align:center"><img alt="" src="" style="height:109px; width:331px"></p>
+
+<p>가끔, 그러나 때때로, 우리들은 키보드에서 양손을 오른쪽으로 한 칸씩 이동한 상태로 두고 타자를 치는 경우가 있다. 즉, "<em>ACMICPC.NET</em>"을 위와 같은 방법으로 치게 되면 "SV,OV[V/MRY"이라는 이상한 문장을 보게 된다.</p>
+
+<p>교준이는 장문을 쓰는데, 너무 급한 나머지 위와 같은 오류를 범한 채로 글을 완성해 버렸다. 이 글을 다시 쓰는 것은 교준이에게는 너무 힘든 일이다. 교준이를 대신해서 오류를 고쳐주자.</p>
+
+### 입력 
+
+ <p>입력은 여러 줄로 이루어진다. 각 줄은 숫자나 공백, 알파벳 대문자, 위의 키보드에 표시되어 있는 문장 부호로 이루어져 있다. Q, A, Z나 `(back-quote), 단어로 이루어진 키(Tab, BackSp, Control 등)는 입력의 각 줄에 포함되지 않는다. 예외적으로 공백(' ', SpaceBar)은 입력으로 들어올 수 있는데, 스페이스 바는 너무 길어서 교준이가 위의 오류를 범하지 않는다.</p>
+
+### 출력 
+
+ <p>각 줄마다 오류를 고쳐 출력한다.</p>
+
+
+
+---
+
+## 💡 해결 방법
+<!-- 이 문제에 대한 접근 방식과 풀이를 작성하세요 -->
+
+
+## 💻 코드
+
+```python
+# https://www.acmicpc.net/problem/4378
+
+list0 = ' '.join('`1234567890-=').split()
+list1 = (' '.join('QWERTYUIOP[]\\')).split()
+list2 = (' '.join('ASDFGHJKL;\'')).split()
+list3 = (' '.join('ZXCVBNM,./')).split()
+
+changespell = list0 + list1 + list2 + list3
+
+# print(*changespell)
+
+while True:
+    try:
+        xinput = input()
+        for x in xinput:
+            if x in changespell:
+                print(changespell[changespell.index(x) - 1], end = '')
+            elif x == ' ':
+                print(' ', end = '')
+        print()
+
+    except:
+        exit()
+```

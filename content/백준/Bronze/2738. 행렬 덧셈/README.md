@@ -1,0 +1,86 @@
+---
+title: "[Bronze III] 행렬 덧셈 - 2738"
+tags: ["백준", "Bronze III"]
+---
+
+# [Bronze III] 행렬 덧셈 - 2738 
+
+[문제 링크](https://www.acmicpc.net/problem/2738) 
+
+### 성능 요약
+
+메모리: 31120 KB, 시간: 60 ms
+
+### 분류
+
+수학, 구현, 사칙연산
+
+### 제출 일자
+
+2026년 04월 25일 22:15:05
+
+### 문제 설명
+
+<p>N*M크기의 두 행렬 A와 B가 주어졌을 때, 두 행렬을 더하는 프로그램을 작성하시오.</p>
+
+### 입력 
+
+ <p>첫째 줄에 행렬의 크기 N 과 M이 주어진다. 둘째 줄부터 N개의 줄에 행렬 A의 원소 M개가 차례대로 주어진다. 이어서 N개의 줄에 행렬 B의 원소 M개가 차례대로 주어진다. N과 M은 100보다 작거나 같고, 행렬의 원소는 절댓값이 100보다 작거나 같은 정수이다.</p>
+
+### 출력 
+
+ <p>첫째 줄부터 N개의 줄에 행렬 A와 B를 더한 행렬을 출력한다. 행렬의 각 원소는 공백으로 구분한다.</p>
+
+
+
+---
+
+## 💡 해결 방법
+<!-- 이 문제에 대한 접근 방식과 풀이를 작성하세요 -->
+
+
+## 💻 코드
+
+```python
+N, M = map(int, input().split())
+           
+while not (0 <= N <= 100 and 0 <= M <= 100):
+    N, M = map(int, input().split())
+    
+A = []
+B = []  
+    
+for i in range(N):
+       temp = list(map(int, input().split()))
+       for i in range(M):
+           if not(temp[i] <= 100 and temp[i] >= -100):
+                temp = list(map(int, input().split()))
+
+       A.append(temp[0:M])
+       
+       
+
+for i in range(N):
+    temp2 = list(map(int, input().split()))
+    for i in range(M):
+        if not(temp[i] <= 100 and temp[i] >= -100):
+            temp2 = list(map(int, input().split()))
+            
+    B.append(temp2[0:M])
+   
+   
+c = []
+
+for i in range(N):
+    for k in range(M):
+        c.append(A[i][k] + B[i][k])
+
+
+
+for i in range(N):
+    if (i != 0):
+        print("")
+    for k in range(M):
+       print(c[i*M + k],"", end= '')
+
+```

@@ -1,0 +1,93 @@
+---
+title: "[Bronze II] 벼락치기 - 25373"
+tags: ["백준", "Bronze II"]
+---
+
+# [Bronze II] 벼락치기 - 25373 
+
+[문제 링크](https://www.acmicpc.net/problem/25373) 
+
+### 성능 요약
+
+메모리: 1112 KB, 시간: 0 ms
+
+### 분류
+
+수학, 많은 조건 분기
+
+### 제출 일자
+
+2026년 04월 25일 22:04:59
+
+### 문제 설명
+
+<p>부산사이버대학교에 다니는 대희는 강의 영상 보는 것을 매일 미뤘다. 오늘은 중간고사가 일주일 남은 날이다. 대희는 더 이상 미루면 큰일이 날 것 같아서 오늘부터 밀린 영상을 보기로 했다. 그런데 아직 정신을 못 차린 대희는 영상을 본 다음 날은 그 전날보다 영상을 적게 본다. 이때 영상을 모두 듣기 위해 첫날 들어야 하는 영상의 개수 중 가장 작은 값을 출력하자.</p>
+
+<p>영상을 하나도 보지 않은 날부터는 계속 영상을 보지 않는 것에 유의하자.</p>
+
+### 입력 
+
+ <p>밀린 영상 개수 $N$이 주어진다.</p>
+
+### 출력 
+
+ <p>첫날 봐야 하는 영상의 개수 중 가장 작은 값을 출력한다.</p>
+
+
+
+---
+
+## 💡 해결 방법
+<!-- 이 문제에 대한 접근 방식과 풀이를 작성하세요 -->
+
+
+## 💻 코드
+
+```cpp
+#include <stdio.h>
+#include <stdlib.h>
+//https://www.acmicpc.net/problem/25373
+
+unsigned long long check(unsigned long long a)
+{
+	int sum = 0;
+	if(a >= 7)
+		return (7 * a - 21);
+	else{
+		for(int i = 0;  a > 0 && i < 7; i--)
+		{
+			sum += a;
+			a--;
+			}
+		}	
+	return sum;
+}
+
+int main(int argc, char *argv[])
+{
+	unsigned long long n;
+	scanf("%llu", &n);
+	
+	unsigned long long  left = 1;
+	unsigned long long right  = n;
+	unsigned long long result = 0;
+	
+	
+	while(left <= right){
+		unsigned long long mid = (left + right) / 2;
+		 if(n <= check(mid))
+		{
+			result = mid;
+			right = mid - 1;
+			}
+		else
+		{
+			left = mid + 1;
+		}
+	}
+
+	printf("%llu\n", result);
+
+	return 0;
+}
+```

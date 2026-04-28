@@ -1,0 +1,78 @@
+---
+title: "[Bronze II] 소수 찾기 - 1978"
+tags: ["백준", "Bronze II"]
+---
+
+# [Bronze II] 소수 찾기 - 1978 
+
+[문제 링크](https://www.acmicpc.net/problem/1978) 
+
+### 성능 요약
+
+메모리: 31120 KB, 시간: 40 ms
+
+### 분류
+
+소수 판정, 정수론, 수학
+
+### 제출 일자
+
+2026년 04월 25일 22:15:05
+
+### 문제 설명
+
+<p>주어진 수 N개 중에서 소수가 몇 개인지 찾아서 출력하는 프로그램을 작성하시오.</p>
+
+### 입력 
+
+ <p>첫 줄에 수의 개수 N이 주어진다. N은 100이하이다. 다음으로 N개의 수가 주어지는데 수는 1,000 이하의 자연수이다.</p>
+
+### 출력 
+
+ <p>주어진 수들 중 소수의 개수를 출력한다.</p>
+
+
+
+---
+
+## 💡 해결 방법
+<!-- 이 문제에 대한 접근 방식과 풀이를 작성하세요 -->
+
+
+## 💻 코드
+
+```python
+def cow(a):
+    if(a == 1):
+        return 0
+    
+    for i in range (2, a):
+        if(a % i == 0):
+            return 0
+        
+
+    return 1
+
+     
+
+
+N = 0
+M = []
+
+
+N = int(input())
+
+
+
+M =  list(map(int, input().split()))
+    
+#print(M)
+
+
+
+answer = 0
+for i in range(N):
+    answer += cow(M[i])
+
+print(answer)
+```

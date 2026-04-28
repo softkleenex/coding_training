@@ -1,0 +1,100 @@
+---
+title: "[Silver V] 사이 나쁜 여왕들 - 10469"
+tags: ["백준", "Silver V"]
+---
+
+# [Silver V] 사이 나쁜 여왕들 - 10469 
+
+[문제 링크](https://www.acmicpc.net/problem/10469) 
+
+### 성능 요약
+
+메모리: 112308 KB, 시간: 112 ms
+
+### 분류
+
+구현
+
+### 제출 일자
+
+2026년 04월 25일 22:04:59
+
+### 문제 설명
+
+<p>체스에서 여왕은 강력한 말이다. 여왕은 가로, 세로, 그리고 대각선으로 제한없이 이동하여 상대를 공격할 수 있다.</p>
+
+<p>사이나쁜 여왕 퀴즈는 여덟 여왕을 8x8 체스판 위에 배치하는데, 아무도 서로 공격할 수 없도록 배치하는 퀴즈다. 가운데 그림은 올바르지 않은 풀이인데, 두 여왕이 대각선을 통해서 서로 공격할 수 있기 때문이다. 오른쪽 그림은 올바른 해법이다. 우리는 체스판과 여왕의 배치가 주어질 때 해당 배치가 올바른 사이나쁜 여왕 퀴즈의 해법인지 아닌지를 판단해야 한다.</p>
+
+<p style="text-align:center"><img alt="" src="" style="height:156px; width:437px"></p>
+
+### 입력 
+
+ <p>입력은 하나의 체스판을 8줄에 걸쳐 줄마다 8개의 문자로 나타낸다.</p>
+
+<p>각 문자는 '.' 혹은 '*' 이며 '.'은 빈 칸을, '*'은 여왕이 있음을 나타낸다.</p>
+
+### 출력 
+
+ <p>한 줄에 걸쳐 올바른 해법일 경우 "valid", 올바르지 않은 해법일 경우 "invalid"를 출력한다.</p>
+
+
+
+---
+
+## 💡 해결 방법
+<!-- 이 문제에 대한 접근 방식과 풀이를 작성하세요 -->
+
+
+## 💻 코드
+
+```python
+# https://www.acmicpc.net/problem/10469
+
+from collections import deque
+
+chess = list()
+
+queenidxs = deque()
+
+for i in range(8):
+    chess.append(input())
+    for i1, v1 in enumerate(chess[i]):
+        if v1 == '*':
+            queenidxs.append([i, i1])
+
+
+
+if len(queenidxs) != 8:
+    print('invalid')
+    exit()
+
+directs = [[-1, -1], [+1, +1], [-1 , +1], [+1, -1], [+1, 0], [-1, 0], [0, -1], [0, +1]]
+
+
+def check(x, y, direct):
+
+    while True:
+        
+        x += direct[0]
+        y += direct[1]
+        
+        if 0 <= x <= 7 and 0 <= y <= 7:
+            if chess[x][y] == '*':
+                print('invalid')
+                exit()
+        else:
+            break
+            
+
+
+
+while queenidxs:
+    x, y = queenidxs.popleft()
+    for direct in directs:
+        check(x, y, direct)
+
+
+
+
+print('valid')
+```
