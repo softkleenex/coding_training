@@ -105,6 +105,18 @@ def create_md_for_standalone_code(code_path):
     platform = "백준" if "백준" in dir_path else "AtCoder" if "atcoder" in dir_path.lower() else "Algorithm"
     difficulty = "Unrated"
 
+    # For AtCoder, extract contest ID from parent folder
+    contest_info = ""
+    if platform == "AtCoder":
+        parent_dir = os.path.basename(dir_path)
+        if parent_dir.isdigit():
+            contest_id = f"ABC{parent_dir}" # Default to ABC assumption for numeric folders
+            difficulty = contest_id
+            contest_info = f"\n이 문제는 **{contest_id}** 콘테스트 문제입니다.\n"
+        elif parent_dir != "atcoder":
+            difficulty = parent_dir
+            contest_info = f"\n이 문제는 **{parent_dir}** 콘테스트 문제입니다.\n"
+
     content = f"""---
 title: "[{platform}] {name}"
 tags: ["{platform}", "{difficulty}"]
@@ -112,7 +124,7 @@ tags: ["{platform}", "{difficulty}"]
 
 # {name}
 
-이 문제는 {platform}에서 푼 문제입니다. 문제 설명이 제공되지 않았습니다.
+이 문제는 {platform}에서 푼 문제입니다. {contest_info}
 
 ---
 

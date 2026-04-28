@@ -53,6 +53,7 @@ export const defaultContentPageLayout: PageLayout = {
   right: [
     Component.Graph(),
     Component.DesktopOnly(Component.TableOfContents()),
+    Component.RecentNotes({ title: "최근 푼 문제", limit: 5 }),
     Component.Backlinks(),
   ],
 }

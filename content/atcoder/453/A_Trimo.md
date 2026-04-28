@@ -1,11 +1,13 @@
 ---
 title: "[AtCoder] A_Trimo"
-tags: ["AtCoder", "Unrated"]
+tags: ["AtCoder", "ABC453"]
 ---
 
 # A_Trimo
 
-이 문제는 AtCoder에서 푼 문제입니다. 문제 설명이 제공되지 않았습니다.
+이 문제는 AtCoder에서 푼 문제입니다. 
+이 문제는 **ABC453** 콘테스트 문제입니다.
+
 
 ---
 
