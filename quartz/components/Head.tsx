@@ -87,6 +87,13 @@ export default (() => {
         <meta name="generator" content="Quartz" />
         <meta name="naver-site-verification" content="b54ffa2e51201a3e274c90ea7234dfeab7094514" />
         <meta name="google-site-verification" content="DlixtFsQ7eZ9lcdthn-evx0eazwiUSvA_5hIiVZfahc" />
+        
+        {/* Google AdSense Auto Ads */}
+        <script 
+          async 
+          src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-8567091536004202"
+          crossOrigin="anonymous"
+        ></script>
 
         {css.map((resource) => CSSResourceToStyleElement(resource, true))}
         {js
