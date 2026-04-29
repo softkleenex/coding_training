@@ -1,3 +1,112 @@
 @use "./base.scss";
 
-// put your custom CSS here!
+/* 🚀 나만의 모던 & 세련된 UI 스타일 */
+
+/* 1. 프리미엄 웹 폰트 (Pretendard) 적용 */
+@import url("https://cdn.jsdelivr.net/gh/orioncactus/pretendard@v1.3.9/dist/web/static/pretendard.min.css");
+
+body {
+  font-family: "Pretendard Variable", Pretendard, "Noto Sans KR", -apple-system, BlinkMacSystemFont, system-ui, Roboto, "Helvetica Neue", "Segoe UI", "Apple SD Gothic Neo", "Malgun Gothic", "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", sans-serif;
+  letter-spacing: -0.02em; /* 살짝 자간을 줄여서 세련되게 */
+  word-break: keep-all; /* 한국어 단어 잘림 방지 */
+}
+
+h1, h2, h3, h4, h5, h6 {
+  font-family: "Pretendard Variable", Pretendard, "Noto Sans KR", sans-serif;
+  font-weight: 700;
+  letter-spacing: -0.03em;
+}
+
+/* 2. 링크 스타일링 (부드러운 언더라인 애니메이션) */
+a {
+  text-decoration: none;
+  background-image: linear-gradient(transparent 70%, var(--tertiary) 70%);
+  background-size: 0% 100%;
+  background-repeat: no-repeat;
+  transition: background-size 0.3s ease;
+  font-weight: 500;
+  color: var(--secondary);
+
+  &:hover {
+    background-size: 100% 100%;
+  }
+
+  &.internal {
+    background-image: linear-gradient(transparent 70%, var(--highlight) 70%);
+    &:hover {
+      background-size: 100% 100%;
+    }
+  }
+}
+
+/* 3. 코드 블록 스타일링 (맥 OS 터미널 스타일 + 그림자) */
+pre {
+  border-radius: 12px !important;
+  box-shadow: 0 4px 14px rgba(0, 0, 0, 0.05);
+  border: 1px solid var(--lightgray);
+  padding: 1.2rem !important;
+  background: var(--light) !important;
+  
+  & > code {
+    font-family: "JetBrains Mono", "Fira Code", monospace;
+    font-size: 0.9em;
+  }
+}
+
+:root[saved-theme="dark"] pre {
+  box-shadow: 0 4px 14px rgba(0, 0, 0, 0.4);
+  background: #161b22 !important; /* 깃허브 다크 모드 풍 */
+  border: 1px solid #30363d;
+}
+
+/* 4. 콜아웃(박스) 스타일링 (모던한 그림자 및 라운드 처리) */
+.callout {
+  border-radius: 12px;
+  border: none;
+  border-left: 4px solid rgba(var(--callout-color), 0.8);
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.04);
+  background-color: rgba(var(--callout-color), 0.05);
+  padding: 1rem 1.2rem;
+  margin: 1.5rem 0;
+
+  .callout-title {
+    font-size: 1.05rem;
+    font-weight: 600;
+  }
+}
+
+:root[saved-theme="dark"] .callout {
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.2);
+}
+
+/* 5. 네비게이션 & 레이아웃 여백 조정 */
+.page .page-header {
+  margin-bottom: 2rem;
+}
+
+/* 좌우 패널 요소 호버 효과 */
+.explorer, .toc {
+  ul li a:hover {
+    color: var(--secondary);
+    transform: translateX(4px);
+    transition: transform 0.2s ease, color 0.2s ease;
+  }
+}
+
+/* 6. 태그 뱃지 스타일 */
+.tag-link {
+  border-radius: 20px;
+  padding: 0.2rem 0.8rem;
+  font-size: 0.85rem;
+  font-weight: 500;
+  background: var(--highlight);
+  color: var(--secondary);
+  border: 1px solid transparent;
+  transition: all 0.2s ease;
+
+  &:hover {
+    background: var(--secondary);
+    color: var(--light);
+    border: 1px solid var(--secondary);
+  }
+}
