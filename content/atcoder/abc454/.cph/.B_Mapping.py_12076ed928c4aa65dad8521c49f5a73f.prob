@@ -1,0 +1,1 @@
+{"name":"Local: B_Mapping","url":"/Volumes/samsd/workspace_v2/coding_training-main/content/atcoder/abc454/B_Mapping.py","tests":[{"id":1777440762833,"input":"4 2\n1 2 1 2","output":"No\nYes"}],"interactive":false,"memoryLimit":1024,"timeLimit":3000,"srcPath":"/Volumes/samsd/workspace_v2/coding_training-main/content/atcoder/abc454/B_Mapping.py","group":"local","local":true}
