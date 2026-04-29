@@ -24,18 +24,6 @@ def format_readme(readme_path):
     with open(readme_path, 'r', encoding='utf-8') as f:
         content = f.read()
         
-    # Check if already formatted
-    if "---" in content[:10] or "## 💡" in content:
-        return False
-        
-    title_match = re.search(r'^#\s+\[(.*?)\]\s+(.*)', content, re.MULTILINE)
-    difficulty = "Unrated"
-    problem_title = "Unknown Problem"
-    
-    if title_match:
-        difficulty = title_match.group(1).strip()
-        problem_title = title_match.group(2).strip()
-    
     code_files = [f for f in os.listdir(dir_path) if f != "README.md" and not f.endswith(".md") and os.path.isfile(os.path.join(dir_path, f))]
     
     code_content = ""
@@ -50,6 +38,25 @@ def format_readme(readme_path):
                 code_content = cf.read()
         except Exception:
             pass
+
+    # Check if already formatted
+    if "---" in content[:10] or "## 💡" in content:
+        if code_content and "## 💻 코드" in content:
+            parts = content.split("## 💻 코드")
+            new_content = parts[0] + f"## 💻 코드\n\n```{language}\n{code_content}\n```\n"
+            if content.strip() != new_content.strip():
+                with open(readme_path, 'w', encoding='utf-8') as f:
+                    f.write(new_content)
+                return True
+        return False
+        
+    title_match = re.search(r'^#\s+\[(.*?)\]\s+(.*)', content, re.MULTILINE)
+    difficulty = "Unrated"
+    problem_title = "Unknown Problem"
+    
+    if title_match:
+        difficulty = title_match.group(1).strip()
+        problem_title = title_match.group(2).strip()
 
     platform = "백준" if "백준" in dir_path else "AtCoder" if "atcoder" in dir_path.lower() else "Algorithm"
     frontmatter = f"""---
@@ -95,12 +102,21 @@ def create_md_for_standalone_code(code_path):
         
     md_path = os.path.join(dir_path, f"{name}.md")
     
-    # If a markdown file with the same name already exists, skip
-    if os.path.exists(md_path):
-        return False
-
     with open(code_path, 'r', encoding='utf-8') as cf:
         code_content = cf.read()
+
+    # If a markdown file with the same name already exists, update it
+    if os.path.exists(md_path):
+        with open(md_path, 'r', encoding='utf-8') as f:
+            content = f.read()
+        if "## 💻 코드" in content:
+            parts = content.split("## 💻 코드")
+            new_content = parts[0] + f"## 💻 코드\n\n```{language}\n{code_content}\n```\n"
+            if content.strip() != new_content.strip():
+                with open(md_path, 'w', encoding='utf-8') as f:
+                    f.write(new_content)
+                return True
+        return False
 
     platform = "백준" if "백준" in dir_path else "AtCoder" if "atcoder" in dir_path.lower() else "Algorithm"
     difficulty = "Unrated"
@@ -109,13 +125,29 @@ def create_md_for_standalone_code(code_path):
     contest_info = ""
     if platform == "AtCoder":
         parent_dir = os.path.basename(dir_path)
+        contest_id = ""
         if parent_dir.isdigit():
-            contest_id = f"ABC{parent_dir}" # Default to ABC assumption for numeric folders
-            difficulty = contest_id
-            contest_info = f"\n이 문제는 **{contest_id}** 콘테스트 문제입니다.\n"
+            contest_id = f"abc{parent_dir}" # Default to abc assumption for numeric folders
+            difficulty = f"ABC{parent_dir}"
         elif parent_dir != "atcoder":
+            contest_id = parent_dir.lower()
             difficulty = parent_dir
-            contest_info = f"\n이 문제는 **{parent_dir}** 콘테스트 문제입니다.\n"
+            
+        if contest_id:
+            # Try to guess task ID from the filename (e.g., 'a', 'A', 'B_Spiral_Galaxy')
+            task_id = ""
+            parts = name.split('_')
+            if len(parts) > 1 and len(parts[0]) == 1:
+                task_id = parts[0].lower()
+            elif len(name) == 1:
+                task_id = name.lower()
+                
+            if task_id:
+                url = f"https://atcoder.jp/contests/{contest_id}/tasks/{contest_id}_{task_id}"
+                contest_info = f"\n이 문제는 **{difficulty}** 콘테스트 문제입니다. \n\n🔗 [문제 바로가기]({url})\n"
+            else:
+                url = f"https://atcoder.jp/contests/{contest_id}/tasks"
+                contest_info = f"\n이 문제는 **{difficulty}** 콘테스트 문제입니다. \n\n🔗 [콘테스트 문제 목록]({url})\n"
 
     content = f"""---
 title: "[{platform}] {name}"
