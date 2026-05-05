@@ -50,7 +50,7 @@
 <!-- problems:start -->
 ### 🏆 Algorithm Solving Status
 
-**Total Solved: 388 Problems** (Baekjoon: 382, AtCoder: 6)
+**Total Solved: 391 Problems** (Baekjoon: 382, AtCoder: 9)
 
 <details>
 <summary>💡 <b>전체 풀이 문제 목록 (클릭하여 펼치기)</b></summary>
@@ -441,10 +441,13 @@
 | Baekjoon | 34552 | 디딤돌 장학금 | Bronze | [풀이 보기](./content/%EB%B0%B1%EC%A4%80/Bronze/34552.%E2%80%85%E1%84%83%E1%85%B5%E1%84%83%E1%85%B5%E1%86%B7%E1%84%83%E1%85%A9%E1%86%AF%E2%80%85%E1%84%8C%E1%85%A1%E1%86%BC%E1%84%92%E1%85%A1%E1%86%A8%E1%84%80%E1%85%B3%E1%86%B7/README.md) |
 | Baekjoon | 34553 | 알파벳 점수 계산기 | Bronze | [풀이 보기](./content/%EB%B0%B1%EC%A4%80/Bronze/34553.%E2%80%85%E1%84%8B%E1%85%A1%E1%86%AF%E1%84%91%E1%85%A1%E1%84%87%E1%85%A6%E1%86%BA%E2%80%85%E1%84%8C%E1%85%A5%E1%86%B7%E1%84%89%E1%85%AE%E2%80%85%E1%84%80%E1%85%A8%E1%84%89%E1%85%A1%E1%86%AB%E1%84%80%E1%85%B5/README.md) |
 | AtCoder | abc456 | A_Dice | - | [풀이 보기](./content/atcoder/abc456/A_Dice.md) |
+| AtCoder | abc456 | B_456 | - | [풀이 보기](./content/atcoder/abc456/B_456.md) |
 | AtCoder | abc454 | B_Mapping | - | [풀이 보기](./content/atcoder/abc454/B_Mapping.md) |
 | AtCoder | abc455 | B_Spiral_Galaxy | - | [풀이 보기](./content/atcoder/abc455/B_Spiral_Galaxy.md) |
+| AtCoder | abc456 | C_Not_Adjacent | - | [풀이 보기](./content/atcoder/abc456/C_Not_Adjacent.md) |
 | AtCoder | abc454 | C_Straw_Millionaire | - | [풀이 보기](./content/atcoder/abc454/C_Straw_Millionaire.md) |
 | AtCoder | abc455 | C_Vanish | - | [풀이 보기](./content/atcoder/abc455/C_Vanish.md) |
+| AtCoder | abc454 | D_(xx) | - | [풀이 보기](./content/atcoder/abc454/D_%28xx%29.md) |
 | AtCoder | abc455 | D_Card_Pile_Query | - | [풀이 보기](./content/atcoder/abc455/D_Card_Pile_Query.md) |
 
 </details>
