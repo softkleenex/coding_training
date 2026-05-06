@@ -50,7 +50,7 @@
 <!-- problems:start -->
 ### 🏆 Algorithm Solving Status
 
-**Total Solved: 391 Problems** (Baekjoon: 382, AtCoder: 9)
+**Total Solved: 392 Problems** (Baekjoon: 382, AtCoder: 10)
 
 <details>
 <summary>💡 <b>전체 풀이 문제 목록 (클릭하여 펼치기)</b></summary>
@@ -443,6 +443,7 @@
 | AtCoder | abc456 | A_Dice | - | [풀이 보기](./content/atcoder/abc456/A_Dice.md) |
 | AtCoder | abc456 | B_456 | - | [풀이 보기](./content/atcoder/abc456/B_456.md) |
 | AtCoder | abc454 | B_Mapping | - | [풀이 보기](./content/atcoder/abc454/B_Mapping.md) |
+| AtCoder | abc453 | B_Sensor_Data_Logging | - | [풀이 보기](./content/atcoder/abc453/B_Sensor_Data_Logging.md) |
 | AtCoder | abc455 | B_Spiral_Galaxy | - | [풀이 보기](./content/atcoder/abc455/B_Spiral_Galaxy.md) |
 | AtCoder | abc456 | C_Not_Adjacent | - | [풀이 보기](./content/atcoder/abc456/C_Not_Adjacent.md) |
 | AtCoder | abc454 | C_Straw_Millionaire | - | [풀이 보기](./content/atcoder/abc454/C_Straw_Millionaire.md) |
