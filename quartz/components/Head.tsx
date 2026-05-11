@@ -85,6 +85,12 @@ export default (() => {
         <link rel="icon" href={iconPath} />
         <meta name="description" content={description} />
         <meta name="generator" content="Quartz" />
+        
+        {/* AdSense Approval: Add noindex to problem solving archives to avoid 'thin content' penalty */}
+        {(fileData.slug?.startsWith("백준/") || fileData.frontmatter?.noindex) && (
+          <meta name="robots" content="noindex" />
+        )}
+
         <meta name="naver-site-verification" content="b54ffa2e51201a3e274c90ea7234dfeab7094514" />
         <meta name="google-site-verification" content="DlixtFsQ7eZ9lcdthn-evx0eazwiUSvA_5hIiVZfahc" />
         

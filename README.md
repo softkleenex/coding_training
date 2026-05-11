@@ -50,7 +50,7 @@
 <!-- problems:start -->
 ### 🏆 Algorithm Solving Status
 
-**Total Solved: 392 Problems** (Baekjoon: 382, AtCoder: 10)
+**Total Solved: 393 Problems** (Baekjoon: 382, AtCoder: 11)
 
 <details>
 <summary>💡 <b>전체 풀이 문제 목록 (클릭하여 펼치기)</b></summary>
@@ -446,6 +446,7 @@
 | AtCoder | abc453 | B_Sensor_Data_Logging | - | [풀이 보기](./content/atcoder/abc453/B_Sensor_Data_Logging.md) |
 | AtCoder | abc455 | B_Spiral_Galaxy | - | [풀이 보기](./content/atcoder/abc455/B_Spiral_Galaxy.md) |
 | AtCoder | abc456 | C_Not_Adjacent | - | [풀이 보기](./content/atcoder/abc456/C_Not_Adjacent.md) |
+| AtCoder | abc453 | C_Sneaking_Glances | - | [풀이 보기](./content/atcoder/abc453/C_Sneaking_Glances.md) |
 | AtCoder | abc454 | C_Straw_Millionaire | - | [풀이 보기](./content/atcoder/abc454/C_Straw_Millionaire.md) |
 | AtCoder | abc455 | C_Vanish | - | [풀이 보기](./content/atcoder/abc455/C_Vanish.md) |
 | AtCoder | abc454 | D_(xx) | - | [풀이 보기](./content/atcoder/abc454/D_%28xx%29.md) |
