@@ -37,8 +37,8 @@ title: "🏠 Home"
 
 - **[[posts/hello-world|💻 기술 블로그 & 트러블슈팅]]**
   - 알고리즘 외에 개발을 하면서 배운 점, 에러 해결 과정, 그리고 잡다한 기술 생각들을 자유롭게 적는 공간입니다.
-- **[[posts/dacon-etri-human-understanding-retrospective|📊 DACON ETRI Human Understanding AI Paper Challenge 회고]]**
-  - 머신러닝 대회에서 로컬 검증과 public leaderboard가 어긋났을 때 무엇을 기록하고 어떻게 판단했는지 정리했습니다.
+- **[[posts/dacon-etri-human-understanding-retrospective|📊 DACON ETRI Human Understanding 대회 회고]]**
+  - 로컬 검증과 public leaderboard가 어긋났던 머신러닝 대회를 끝내고 남긴 블로그 회고입니다.
 
 ---
 
