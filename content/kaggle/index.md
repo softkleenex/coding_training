@@ -28,7 +28,6 @@ Kaggle 대회와 관련 실험을 정리하는 포트폴리오 아카이브입�
 | [한화생명 미래금융인재 공모전 - LifeTwin AI](./hlftc)                                  | 미설정                                                                                                        | 공모전/기획       |
 | [ARC Prize 2025: Abstract Reasoning Challenge](./kaggle-arc-prize-2025)                | [kaggle-arc-prize-2025](https://github.com/softkleenex/kaggle-arc-prize-2025)                                 | 추론/ARC          |
 | [Translating Ancient Akkadian to English](./kaggle-dpc-tate)                           | 미설정                                                                                                        | 번역/NLP          |
-| [HAI 2025 Deepfake Detection Challenge](./kaggle-hai-2025)                             | [kaggle-hai-2025](https://github.com/softkleenex/kaggle-hai-2025)                                             | 탐지              |
 | [Kaggle Playground S6E2 - Heart Disease Prediction](./kaggle-heart-disease-prediction) | [kaggle-heart-disease-prediction](https://github.com/softkleenex/kaggle-heart-disease-prediction)             | Tabular           |
 | [Hull Tactical Market Prediction](./kaggle-hull-tactical-prediction)                   | [kaggle-hull-tactical-prediction](https://github.com/softkleenex/kaggle-hull-tactical-prediction)             | 금융/시계열       |
 | [Kaggle Jigsaw ACRC Portfolio](./kaggle-jigsaw-acrc-portfolio)                         | [kaggle-jigsaw-acrc-portfolio](https://github.com/softkleenex/kaggle-jigsaw-acrc-portfolio)                   | 포트폴리오/디버깅 |
