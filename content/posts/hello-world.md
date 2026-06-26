@@ -1,13 +1,26 @@
 ---
-title: "Welcome to my new Notion Blog!"
+title: "Softkleenex Archive 소개"
+description: "AI 개발자를 꿈꾸며 알고리즘, 개발, DACON과 Kaggle 대회 회고를 정리하는 Softkleenex Archive의 운영 방향입니다."
 tags:
-  - "General"
-  - "Hello World"
+  - AI
+  - Portfolio
+  - Development
+  - Retrospective
 status: "Published"
 ---
 
-Hello! This is my new automated blog setup. 
+# Softkleenex Archive 소개
 
-Instead of dealing with complex workflows, I just push a markdown file to the `posts/` directory on GitHub, and a GitHub action automatically syncs this text right into my Notion database.
+이 블로그는 정답만 모아두는 곳이라기보다, 개발자로 성장하면서 지나온 판단을 다시 읽기 위한 아카이브다. 알고리즘 문제를 풀고, DACON이나 Kaggle 대회를 치르고, 자동화 스크립트가 깨지고, 검증 점수가 실제 제출 점수와 어긋나는 순간들을 그냥 지나치지 않으려고 만든 공간이다.
 
-Isn't that awesome? Now I can track all my learning and daily coding practices from here.
+특히 AI 개발자를 꿈꾸는 과정에서 대회 회고를 중요하게 남기고 싶다. 점수표만 보면 성공과 실패가 단순해 보이지만, 실제 작업은 훨씬 지저분하다. 좋은 feature라고 믿었던 것이 public leaderboard에서 무너지기도 하고, 별것 아닌 로그 한 줄이 마지막 판단을 살리기도 한다.
+
+그래서 이곳에는 다음과 같은 기록을 남기려고 한다.
+
+- 어떤 문제를 풀었는지
+- 어디서 병목이 생겼는지
+- 어떤 실험이 기대와 다르게 실패했는지
+- 무엇을 기준으로 제출하거나 멈췄는지
+- 끝나고 나서 어떤 습관을 다음으로 가져갈지
+
+포트폴리오로 쓰기 위해 보기 좋게 정리하되, 너무 매끈하게만 만들지는 않으려 한다. 사람이 직접 부딪히며 쌓은 기록처럼, 과정과 느낌이 같이 남아 있는 블로그가 목표다.

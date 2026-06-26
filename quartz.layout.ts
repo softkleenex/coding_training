@@ -7,19 +7,19 @@ export const sharedPageComponents: SharedLayout = {
   header: [],
   afterBody: [
     Component.Comments({
-      provider: 'giscus',
+      provider: "giscus",
       options: {
-        repo: 'softkleenex/coding_training',
-        repoId: 'R_kgDOR17fXA',
-        category: 'General',
-        categoryId: 'DIC_kwDOR17fXM4C72mQ',
-      }
+        repo: "softkleenex/coding_training",
+        repoId: "R_kgDOR17fXA",
+        category: "General",
+        categoryId: "DIC_kwDOR17fXM4C72mQ",
+      },
     }),
   ],
   footer: Component.Footer({
     links: {
       GitHub: "https://github.com/softkleenex",
-      "Repository": "https://github.com/softkleenex/coding_training",
+      Archive: "https://github.com/softkleenex/coding_training",
     },
   }),
 }
@@ -53,7 +53,7 @@ export const defaultContentPageLayout: PageLayout = {
   right: [
     Component.Graph(),
     Component.DesktopOnly(Component.TableOfContents()),
-    Component.RecentNotes({ title: "최근 푼 문제", limit: 5 }),
+    Component.RecentNotes({ title: "최근 기록", limit: 5 }),
     Component.Backlinks(),
   ],
 }
