@@ -1,38 +1,104 @@
 ---
-title: "DACON ETRI Human Understanding AI Paper Challenge"
-description: "Softkleenex의 DACON 프로젝트 노트입니다. DACON ETRI Human Understanding AI Paper Challenge의 GitHub 저장소, 실험 기록, 제출 운영, 회고 링크를 한곳에 연결합니다."
+title: "DACON ETRI Human Understanding 대회 회고: 점수보다 기록이 오래 남았다"
+description: "DACON ETRI Human Understanding AI Paper Challenge를 마친 뒤 로컬 CV와 public leaderboard gap, 제출 운영, 기록 관리에서 배운 점을 정리한 DACON 대회 회고입니다."
 tags:
   - Competition
   - DACON
+  - Machine-Learning
+  - Retrospective
 status: "Published"
+aliases:
+  - posts/dacon-etri-human-understanding-retrospective
 ---
 
-# DACON ETRI Human Understanding AI Paper Challenge
+# DACON ETRI Human Understanding 대회 회고: 점수보다 기록이 오래 남았다
 
-DACON ETRI Human Understanding AI Paper Challenge 작업을 블로그와 GitHub 사이에서 추적하기 위한 포트폴리오 노트입니다. 이 페이지는 대회 문제, 실험 기록, 제출 운영, 회고 글을 찾아가기 위한 허브 역할을 합니다.
+2026년 6월 26일 오전, DACON ETRI Human Understanding AI Paper Challenge가 끝났다.
+
+막판에는 거의 분 단위로 판단했다. 제출권은 남아 있고, public leaderboard는 생각만큼 움직이지 않고, 로컬에서는 좋아 보이는 후보가 계속 생겼다. "지금 이걸 제출하는 게 맞나?"를 계속 물으면서 파일 이름, 로그, notebook 기록, 제출 메모를 하나씩 맞췄다.
+
+대회가 끝나고 나니 가장 오래 남은 건 모델 구조가 아니었다. 오히려 검증을 믿을 수 없을 때 무엇을 기준으로 의사결정했는지, 그리고 실패한 제출을 나중에 설명할 수 있게 기록했는지가 더 크게 남았다.
 
 ## 한눈에 보기
 
 | 항목       | 내용                                                                                                                                                                     |
-| ---------- | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------ | --------------------- |
+| ---------- | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------ |
 | Platform   | `DACON`                                                                                                                                                                  |
 | Local repo | `dacon-etri-human-understanding`                                                                                                                                         |
 | GitHub     | [dacon-etri-human-understanding](https://github.com/softkleenex/dacon-etri-human-understanding)                                                                          |
 | Blog URL   | [https://softkleenex.github.io/coding_training/dacon/dacon-etri-human-understanding](https://softkleenex.github.io/coding_training/dacon/dacon-etri-human-understanding) |
-| Category   | [[index                                                                                                                                                                  | DACON 대회 아카이브]] |
+| Category   | [DACON 대회 아카이브](./)                                                                                                                                                |
 
-## 기록 포인트
+## 어떤 대회였나
 
-- DACON 대회 문제를 풀며 만든 코드 저장소와 블로그 기록을 연결합니다.
-- 데이터 처리, 모델링, 검증, 제출 운영에서 남긴 실험 메모를 repo README와 문서에서 이어서 확인할 수 있습니다.
-- 대회가 끝난 뒤에는 별도 회고 글을 추가해 성공한 판단과 실패한 판단을 분리해 기록합니다.
+스마트폰과 스마트워치에서 수집된 라이프로그를 바탕으로 사람의 상태를 예측하는 문제였다. 타깃은 Q1-Q3의 주관식 상태와 S1-S4의 수면 관련 지표, 총 7개였다.
+
+처음에는 "라이프로그니까 도메인 신호를 잘 뽑으면 되지 않을까?"라고 생각했다. 앱 사용, 활동량, 수면 패턴, 날씨, 대기질 같은 신호를 잘 엮으면 점수가 내려갈 것 같았다. 그런데 실제로는 그렇게 단순하지 않았다. 어떤 feature는 로컬에서는 그럴듯했지만 public leaderboard에서는 거의 반응하지 않았고, 어떤 후보는 로컬 CV가 좋아졌는데 실제 제출 점수는 나빠졌다.
+
+이때부터 대회는 모델링 문제이면서 동시에 운영 문제가 됐다. 새 feature를 만드는 것만큼이나, 그 feature가 진짜 신호인지 아니면 split에 과적합한 착시인지 구분하는 일이 중요했다.
+
+## 끝까지 기준점이 된 ID342
+
+public 기준으로 마지막까지 가장 좋았던 제출은 `ID342`였다.
+
+|  id | 설명                                              | local CV |    public LB |
+| --: | ------------------------------------------------- | -------: | -----------: |
+| 342 | ID178/ID221 feature-similarity shrink, alpha 0.50 | 0.534000 | 0.5960832519 |
+
+이 후보는 "강한 새 모델 하나"라기보다, 이미 만든 예측 두 계열을 feature similarity 기준으로 보수적으로 줄여 섞은 결과였다. 화려한 아이디어는 아니었지만 안정적이었다. 새로 만든 후보들이 로컬에서 조금씩 이겨도, public에서는 이 기준점을 넘기 어려웠다.
+
+이 지점이 좀 괴로웠다. 연구하고 feature를 붙이면 붙일수록 로컬 점수는 내려가는데, 정작 public에서는 잘 안 먹혔다. 대회 중반 이후에는 `ID342`가 일종의 방어선이 됐다. 새 후보는 "좋아 보인다"가 아니라 "ID342보다 정말 제출할 가치가 있나?"를 통과해야 했다.
+
+## 마지막 날의 제출들
+
+마지막 날에는 Q3 app-name lexicon anti-signal 후보를 만들었다. 앱 이름에서 스트레스와 관련된 신호를 뽑아보자는 아이디어였다. 도메인상 말이 됐고, 로컬 게이트도 나쁘지 않았다. 일부 split에서는 꽤 일관되게 이겼다.
+
+그래서 제출했다. 그리고 전부 졌다.
+
+|  id | local CV |    public LB | ID342 대비 public 변화 |
+| --: | -------: | -----------: | ---------------------: |
+| 346 | 0.533659 | 0.5963391483 |          +0.0002558964 |
+| 350 | 0.533699 | 0.5963352712 |          +0.0002520193 |
+| 347 | 0.533813 | 0.5961947552 |          +0.0001115033 |
+
+셋 중 가장 가까웠던 ID347도 ID342보다 나빴다. 수치상으로는 아주 작은 차이지만, 대회 막판에는 이런 작은 차이가 하루 종일 머릿속을 맴돈다. "조금만 더 보수적으로 갔으면?" "아예 제출하지 않는 게 맞았나?" 같은 생각이 남는다.
+
+그래도 이 제출들이 완전히 무의미하다고 생각하지는 않는다. 이들은 적어도 한 가지를 확인해줬다. 내가 만든 Q3 lexicon 신호는 로컬에서는 유용해 보였지만 public split으로는 충분히 transfer되지 않았다. 아쉽지만, 이것도 대회에서 얻는 정보다.
+
+## 이번 대회에서 제일 많이 배운 것
+
+이번 대회의 핵심 문장은 이것이었다.
+
+> 좋은 로컬 점수와 좋은 제출 후보는 다르다.
+
+로컬 CV는 필요하다. 없으면 아무것도 못 한다. 하지만 로컬 CV가 좋아졌다는 사실만으로 제출 가치가 생기지는 않았다. 특히 타깃별로 신호가 다르고, public/private split의 분포를 완전히 알 수 없는 상황에서는 더 그랬다.
+
+그래서 후반부에는 점수표보다 로그가 더 중요해졌다. 제출 파일 하나, notebook-history stub 하나, submission log 한 행이 서로 맞아야 했다. 그래야 나중에 "이 public score가 어느 파일에서 나온 거지?"라는 질문에 답할 수 있었다.
+
+대회 막판에는 정신이 꽤 흐려진다. 비슷한 이름의 CSV가 많아지고, 제출 메모는 길어지고, 로컬 점수와 public 점수가 섞이기 쉽다. 이때 기록이 없으면 실험이 아니라 운에 가까워진다. 이번에는 적어도 그 부분을 끝까지 붙잡으려고 했다.
+
+## 잘했던 것과 아쉬운 것
+
+잘했던 건 제출 후보를 꽤 엄격하게 관리하려고 한 점이다. 로컬 점수와 제출 점수를 분리해서 적었고, 위험한 후보는 따로 표시했다. 덕분에 마지막 날에도 어느 후보가 실제로 제출됐고, 어느 후보가 실패했는지 복구할 수 있었다.
+
+아쉬운 건 public feedback을 설명하는 validation lens를 충분히 빨리 만들지 못한 점이다. 날씨, 대기질, 앱 사용량 같은 외부/도메인 feature를 계속 실험했지만, "왜 public에서는 안 먹히는가"를 더 일찍 분석했어야 했다. feature를 더 많이 만드는 것보다, public에서 통하는 신호와 안 통하는 신호의 차이를 먼저 봤어야 했다.
+
+보안 쪽에서도 배운 게 있다. 자동 제출과 API 연동은 편하지만 credential은 절대 코드에 남기면 안 된다. 이번에는 과거 이력에 남은 토큰을 제거하고 history rewrite까지 했다. 대회 repo도 결국 제품 repo처럼 다뤄야 한다.
+
+## 다음 대회라면
+
+다음에 비슷한 대회를 한다면 초반부터 세 가지를 더 강하게 가져갈 것 같다.
+
+1. public feedback을 설명하는 검증 set을 빨리 만든다.
+2. 실험 이름, CSV, 로그, notebook 기록을 처음부터 1:1로 맞춘다.
+3. 새 feature가 로컬에서 이겼을 때보다, 왜 이겼는지 설명될 때 제출한다.
+
+목표했던 0.55에는 닿지 못했다. 솔직히 아쉽다. 점수표만 보면 실패에 가깝다. 그런데 대회가 끝난 뒤 남은 폴더를 보면, 그래도 다음 대회에서 반복하지 않을 실수들이 꽤 선명하게 남아 있다.
+
+그게 이번 대회의 수확이었다. 점수는 기대보다 높았지만, 기록은 생각보다 오래 남았다.
 
 ## 연결
 
-- 카테고리: [[index|DACON 대회 아카이브]]
+- 카테고리: [DACON 대회 아카이브](./)
 - GitHub repo: [dacon-etri-human-understanding](https://github.com/softkleenex/dacon-etri-human-understanding)
 - 이 페이지: [https://softkleenex.github.io/coding_training/dacon/dacon-etri-human-understanding](https://softkleenex.github.io/coding_training/dacon/dacon-etri-human-understanding)
-
-## 관련 글
-
-- [[../posts/dacon-etri-human-understanding-retrospective|DACON ETRI Human Understanding 대회 회고: 점수보다 기록이 오래 남았다]]

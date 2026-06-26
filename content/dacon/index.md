@@ -13,19 +13,18 @@ DACON 대회에 참여하며 만든 코드 저장소와 회고를 연결해두�
 
 ## 대표 링크
 
-- [[dacon-etri-human-understanding|DACON ETRI Human Understanding AI Paper Challenge]]
-- [[../posts/dacon-etri-human-understanding-retrospective|DACON ETRI Human Understanding 대회 회고: 점수보다 기록이 오래 남았다]]
+- [DACON ETRI Human Understanding 대회 회고: 점수보다 기록이 오래 남았다](./dacon-etri-human-understanding)
 
 ## 대회 목록
 
-| 대회                                   | GitHub                                                                   | 비고                                                                                                        |
-| -------------------------------------- | ------------------------------------------------------------------------ | ----------------------------------------------------------------------------------------------------------- | --------- |
-| [[dacon-base                           | Dacon Base Template]]                                                    | [dacon-base](https://github.com/softkleenex/dacon-base)                                                     | 대회 repo |
-| [[dacon-car-news-classification        | DACON 자동차 뉴스 분류 Prompt Engineering]]                              | [dacon-car-news-classification](https://github.com/softkleenex/dacon-car-news-classification)               | 대회 repo |
-| [[dacon-etri-human-understanding       | DACON ETRI Human Understanding AI Paper Challenge]]                      | [dacon-etri-human-understanding](https://github.com/softkleenex/dacon-etri-human-understanding)             | 대회 repo |
-| [[dacon-k-league-pass-prediction       | ⚽ K-League Pass Coordinate Prediction (LifeTwin AI)]]                   | [dacon-k-league-pass-prediction](https://github.com/softkleenex/dacon-k-league-pass-prediction)             | 대회 repo |
-| [[dacon-mai-glm-2025                   | Genomic Variant Detection using Deep Learning]]                          | [dacon-mai-glm-2025](https://github.com/softkleenex/dacon-mai-glm-2025)                                     | 대회 repo |
-| [[dacon-mosquito-trajectory-prediction | 🦟 DACON Mosquito Trajectory Prediction (모기 궤적 예측)]]               | [dacon-mosquito-trajectory-prediction](https://github.com/softkleenex/dacon-mosquito-trajectory-prediction) | 대회 repo |
-| [[dacon-shipping-anomaly-detection     | 스마트 해운물류 x AI 미션 챌린지 : 이상신호 감지 기반 비정상 작동 진단]] | [dacon-shipping-anomaly-detection](https://github.com/softkleenex/dacon-shipping-anomaly-detection)         | 대회 repo |
-| [[dacon-toss-ctr-prediction            | Toss NEXT ML Challenge - CTR Prediction]]                                | [dacon-toss-ctr-prediction](https://github.com/softkleenex/dacon-toss-ctr-prediction)                       | 대회 repo |
-| [[dacon-webgamming                     | Dacon Web Minigame Hackathon]]                                           | 미설정                                                                                                      | 대회 repo |
+| 대회                                                                                                         | GitHub                                                                                                      | 비고      |
+| ------------------------------------------------------------------------------------------------------------ | ----------------------------------------------------------------------------------------------------------- | --------- |
+| [Dacon Base Template](./dacon-base)                                                                          | [dacon-base](https://github.com/softkleenex/dacon-base)                                                     | 대회 repo |
+| [DACON 자동차 뉴스 분류 Prompt Engineering](./dacon-car-news-classification)                                 | [dacon-car-news-classification](https://github.com/softkleenex/dacon-car-news-classification)               | 대회 repo |
+| [DACON ETRI Human Understanding 대회 회고: 점수보다 기록이 오래 남았다](./dacon-etri-human-understanding)    | [dacon-etri-human-understanding](https://github.com/softkleenex/dacon-etri-human-understanding)             | 대회 repo |
+| [⚽ K-League Pass Coordinate Prediction (LifeTwin AI)](./dacon-k-league-pass-prediction)                     | [dacon-k-league-pass-prediction](https://github.com/softkleenex/dacon-k-league-pass-prediction)             | 대회 repo |
+| [Genomic Variant Detection using Deep Learning](./dacon-mai-glm-2025)                                        | [dacon-mai-glm-2025](https://github.com/softkleenex/dacon-mai-glm-2025)                                     | 대회 repo |
+| [🦟 DACON Mosquito Trajectory Prediction (모기 궤적 예측)](./dacon-mosquito-trajectory-prediction)           | [dacon-mosquito-trajectory-prediction](https://github.com/softkleenex/dacon-mosquito-trajectory-prediction) | 대회 repo |
+| [스마트 해운물류 x AI 미션 챌린지 : 이상신호 감지 기반 비정상 작동 진단](./dacon-shipping-anomaly-detection) | [dacon-shipping-anomaly-detection](https://github.com/softkleenex/dacon-shipping-anomaly-detection)         | 대회 repo |
+| [Toss NEXT ML Challenge - CTR Prediction](./dacon-toss-ctr-prediction)                                       | [dacon-toss-ctr-prediction](https://github.com/softkleenex/dacon-toss-ctr-prediction)                       | 대회 repo |
+| [Dacon Web Minigame Hackathon](./dacon-webgamming)                                                           | 미설정                                                                                                      | 대회 repo |
