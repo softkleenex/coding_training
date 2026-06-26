@@ -33,6 +33,13 @@ title: "🏠 Home"
 - **[[atcoder/index|🎌 AtCoder (앳코더)]]**
   - 콘테스트 참가 및 문제 풀이 기록입니다.
 
+### 🤖 ML Competitions
+
+- **[[dacon/index|📊 DACON 대회 아카이브]]**
+  - DACON 대회 repo, 회고, 실험 운영 기록을 모아둔 공간입니다.
+- **[[kaggle/index|🏁 Kaggle 대회 아카이브]]**
+  - Kaggle 대회 repo와 실험 노트를 연결해두는 포트폴리오 공간입니다.
+
 ### 📝 개발 일지 (Dev Log)
 
 - **[[posts/hello-world|💻 기술 블로그 & 트러블슈팅]]**
