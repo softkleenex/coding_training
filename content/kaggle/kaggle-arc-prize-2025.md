@@ -14,12 +14,12 @@ ARC Prize 2025: Abstract Reasoning Challenge 🧩 작업을 블로그와 GitHub 
 ## 한눈에 보기
 
 | 항목       | 내용                                                                                                                                                     |
-| ---------- | -------------------------------------------------------------------------------------------------------------------------------------------------------- | ---------------------- |
+| ---------- | -------------------------------------------------------------------------------------------------------------------------------------------------------- |
 | Platform   | `Kaggle`                                                                                                                                                 |
 | Local repo | `kaggle-arc-prize-2025`                                                                                                                                  |
 | GitHub     | [kaggle-arc-prize-2025](https://github.com/softkleenex/kaggle-arc-prize-2025)                                                                            |
 | Blog URL   | [https://softkleenex.github.io/coding_training/kaggle/kaggle-arc-prize-2025](https://softkleenex.github.io/coding_training/kaggle/kaggle-arc-prize-2025) |
-| Category   | [[index                                                                                                                                                  | Kaggle 대회 아카이브]] |
+| Category   | [Kaggle 대회 아카이브](./)                                                                                                                               |
 
 ## 기록 포인트
 

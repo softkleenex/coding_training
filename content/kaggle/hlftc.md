@@ -14,12 +14,12 @@ status: "Published"
 ## 한눈에 보기
 
 | 항목         | 내용                                                                                                                     |
-| ------------ | ------------------------------------------------------------------------------------------------------------------------ | ---------------------- |
+| ------------ | ------------------------------------------------------------------------------------------------------------------------ |
 | Platform     | `Competition`                                                                                                            |
 | Local folder | `HLFTC`                                                                                                                  |
 | GitHub       | origin remote 또는 Git repo가 아직 설정되어 있지 않습니다.                                                               |
 | Blog URL     | [https://softkleenex.github.io/coding_training/kaggle/hlftc](https://softkleenex.github.io/coding_training/kaggle/hlftc) |
-| Category     | [[index                                                                                                                  | Kaggle 대회 아카이브]] |
+| Category     | [Kaggle 대회 아카이브](./)                                                                                               |
 
 ## 기록 포인트
 

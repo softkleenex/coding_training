@@ -14,12 +14,12 @@ status: "Published"
 ## 한눈에 보기
 
 | 항목       | 내용                                                                                                                                                                         |
-| ---------- | ---------------------------------------------------------------------------------------------------------------------------------------------------------------------------- | --------------------- |
+| ---------- | ---------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
 | Platform   | `DACON`                                                                                                                                                                      |
 | Local repo | `dacon-shipping-anomaly-detection`                                                                                                                                           |
 | GitHub     | [dacon-shipping-anomaly-detection](https://github.com/softkleenex/dacon-shipping-anomaly-detection)                                                                          |
 | Blog URL   | [https://softkleenex.github.io/coding_training/dacon/dacon-shipping-anomaly-detection](https://softkleenex.github.io/coding_training/dacon/dacon-shipping-anomaly-detection) |
-| Category   | [[index                                                                                                                                                                      | DACON 대회 아카이브]] |
+| Category   | [DACON 대회 아카이브](./)                                                                                                                                                    |
 
 ## 기록 포인트
 

@@ -14,12 +14,12 @@ Hull Tactical Market Prediction (2025-2026) 📉📈 작업을 블로그와 GitH
 ## 한눈에 보기
 
 | 항목       | 내용                                                                                                                                                                         |
-| ---------- | ---------------------------------------------------------------------------------------------------------------------------------------------------------------------------- | ---------------------- |
+| ---------- | ---------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
 | Platform   | `Kaggle`                                                                                                                                                                     |
 | Local repo | `kaggle-hull-tactical-prediction`                                                                                                                                            |
 | GitHub     | [kaggle-hull-tactical-prediction](https://github.com/softkleenex/kaggle-hull-tactical-prediction)                                                                            |
 | Blog URL   | [https://softkleenex.github.io/coding_training/kaggle/kaggle-hull-tactical-prediction](https://softkleenex.github.io/coding_training/kaggle/kaggle-hull-tactical-prediction) |
-| Category   | [[index                                                                                                                                                                      | Kaggle 대회 아카이브]] |
+| Category   | [Kaggle 대회 아카이브](./)                                                                                                                                                   |
 
 ## 기록 포인트
 

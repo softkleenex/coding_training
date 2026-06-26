@@ -14,12 +14,12 @@ Genomic Variant Detection using Deep Learning 작업을 블로그와 GitHub 사�
 ## 한눈에 보기
 
 | 항목       | 내용                                                                                                                                             |
-| ---------- | ------------------------------------------------------------------------------------------------------------------------------------------------ | --------------------- |
+| ---------- | ------------------------------------------------------------------------------------------------------------------------------------------------ |
 | Platform   | `DACON`                                                                                                                                          |
 | Local repo | `dacon-mai-glm-2025`                                                                                                                             |
 | GitHub     | [dacon-mai-glm-2025](https://github.com/softkleenex/dacon-mai-glm-2025)                                                                          |
 | Blog URL   | [https://softkleenex.github.io/coding_training/dacon/dacon-mai-glm-2025](https://softkleenex.github.io/coding_training/dacon/dacon-mai-glm-2025) |
-| Category   | [[index                                                                                                                                          | DACON 대회 아카이브]] |
+| Category   | [DACON 대회 아카이브](./)                                                                                                                        |
 
 ## 기록 포인트
 

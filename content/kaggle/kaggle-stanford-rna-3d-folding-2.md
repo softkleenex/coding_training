@@ -14,12 +14,12 @@ status: "Published"
 ## 한눈에 보기
 
 | 항목       | 내용                                                                                                                                                                           |
-| ---------- | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------ | ---------------------- |
+| ---------- | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------ |
 | Platform   | `Kaggle`                                                                                                                                                                       |
 | Local repo | `kaggle-stanford-rna-3d-folding-2`                                                                                                                                             |
 | GitHub     | [kaggle-stanford-rna-3d-folding-2](https://github.com/softkleenex/kaggle-stanford-rna-3d-folding-2)                                                                            |
 | Blog URL   | [https://softkleenex.github.io/coding_training/kaggle/kaggle-stanford-rna-3d-folding-2](https://softkleenex.github.io/coding_training/kaggle/kaggle-stanford-rna-3d-folding-2) |
-| Category   | [[index                                                                                                                                                                        | Kaggle 대회 아카이브]] |
+| Category   | [Kaggle 대회 아카이브](./)                                                                                                                                                     |
 
 ## 기록 포인트
 

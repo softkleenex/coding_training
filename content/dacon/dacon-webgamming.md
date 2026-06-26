@@ -14,12 +14,12 @@ Dacon Web Minigame Hackathon 작업을 블로그와 GitHub 사이에서 추적�
 ## 한눈에 보기
 
 | 항목       | 내용                                                                                                                                         |
-| ---------- | -------------------------------------------------------------------------------------------------------------------------------------------- | --------------------- |
+| ---------- | -------------------------------------------------------------------------------------------------------------------------------------------- |
 | Platform   | `DACON`                                                                                                                                      |
 | Local repo | `dacon-webgamming`                                                                                                                           |
 | GitHub     | origin remote 또는 Git repo가 아직 설정되어 있지 않습니다.                                                                                   |
 | Blog URL   | [https://softkleenex.github.io/coding_training/dacon/dacon-webgamming](https://softkleenex.github.io/coding_training/dacon/dacon-webgamming) |
-| Category   | [[index                                                                                                                                      | DACON 대회 아카이브]] |
+| Category   | [DACON 대회 아카이브](./)                                                                                                                    |
 
 ## 기록 포인트
 

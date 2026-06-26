@@ -14,12 +14,12 @@ status: "Published"
 ## 한눈에 보기
 
 | 항목       | 내용                                                                                                                                                                     |
-| ---------- | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------ | --------------------- |
+| ---------- | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------ |
 | Platform   | `DACON`                                                                                                                                                                  |
 | Local repo | `dacon-k-league-pass-prediction`                                                                                                                                         |
 | GitHub     | [dacon-k-league-pass-prediction](https://github.com/softkleenex/dacon-k-league-pass-prediction)                                                                          |
 | Blog URL   | [https://softkleenex.github.io/coding_training/dacon/dacon-k-league-pass-prediction](https://softkleenex.github.io/coding_training/dacon/dacon-k-league-pass-prediction) |
-| Category   | [[index                                                                                                                                                                  | DACON 대회 아카이브]] |
+| Category   | [DACON 대회 아카이브](./)                                                                                                                                                |
 
 ## 기록 포인트
 

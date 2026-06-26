@@ -51,6 +51,8 @@ tags:
 
 - **[[posts/hello-world|💻 Softkleenex Archive 소개]]**
   - 이 블로그를 어떤 톤과 기준으로 운영할지 적어둔 소개 글입니다.
+- **[[posts/competition-archive-audit-2026-06-26|🧭 대회 기록 감사와 개선 로드맵]]**
+  - DACON과 Kaggle 대회 기록을 포트폴리오 회고로 바꾸기 위한 현재 상태 점검입니다.
 - **[[dacon/dacon-etri-human-understanding|📊 DACON ETRI Human Understanding 대회 회고]]**
   - 로컬 검증과 public leaderboard가 어긋났던 DACON 대회를 끝내고 남긴 회고입니다.
 

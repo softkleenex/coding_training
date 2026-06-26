@@ -14,12 +14,12 @@ status: "Published"
 ## 한눈에 보기
 
 | 항목       | 내용                                                                                                                                                                                 |
-| ---------- | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------ | --------------------- |
+| ---------- | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------ |
 | Platform   | `DACON`                                                                                                                                                                              |
 | Local repo | `dacon-mosquito-trajectory-prediction`                                                                                                                                               |
 | GitHub     | [dacon-mosquito-trajectory-prediction](https://github.com/softkleenex/dacon-mosquito-trajectory-prediction)                                                                          |
 | Blog URL   | [https://softkleenex.github.io/coding_training/dacon/dacon-mosquito-trajectory-prediction](https://softkleenex.github.io/coding_training/dacon/dacon-mosquito-trajectory-prediction) |
-| Category   | [[index                                                                                                                                                                              | DACON 대회 아카이브]] |
+| Category   | [DACON 대회 아카이브](./)                                                                                                                                                            |
 
 ## 기록 포인트
 

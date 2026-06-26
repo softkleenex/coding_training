@@ -14,12 +14,12 @@ Translating Ancient Akkadian to English (Kaggle: Deep Past Initiative) 작업을
 ## 한눈에 보기
 
 | 항목       | 내용                                                                                                                                         |
-| ---------- | -------------------------------------------------------------------------------------------------------------------------------------------- | ---------------------- |
+| ---------- | -------------------------------------------------------------------------------------------------------------------------------------------- |
 | Platform   | `Kaggle`                                                                                                                                     |
 | Local repo | `kaggle-dpc-tate`                                                                                                                            |
 | GitHub     | origin remote 또는 Git repo가 아직 설정되어 있지 않습니다.                                                                                   |
 | Blog URL   | [https://softkleenex.github.io/coding_training/kaggle/kaggle-dpc-tate](https://softkleenex.github.io/coding_training/kaggle/kaggle-dpc-tate) |
-| Category   | [[index                                                                                                                                      | Kaggle 대회 아카이브]] |
+| Category   | [Kaggle 대회 아카이브](./)                                                                                                                   |
 
 ## 기록 포인트
 

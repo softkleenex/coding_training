@@ -14,12 +14,12 @@ DACON 자동차 뉴스 분류 Prompt Engineering 작업을 블로그와 GitHub �
 ## 한눈에 보기
 
 | 항목       | 내용                                                                                                                                                                   |
-| ---------- | ---------------------------------------------------------------------------------------------------------------------------------------------------------------------- | --------------------- |
+| ---------- | ---------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
 | Platform   | `DACON`                                                                                                                                                                |
 | Local repo | `dacon-car-news-classification`                                                                                                                                        |
 | GitHub     | [dacon-car-news-classification](https://github.com/softkleenex/dacon-car-news-classification)                                                                          |
 | Blog URL   | [https://softkleenex.github.io/coding_training/dacon/dacon-car-news-classification](https://softkleenex.github.io/coding_training/dacon/dacon-car-news-classification) |
-| Category   | [[index                                                                                                                                                                | DACON 대회 아카이브]] |
+| Category   | [DACON 대회 아카이브](./)                                                                                                                                              |
 
 ## 기록 포인트
 

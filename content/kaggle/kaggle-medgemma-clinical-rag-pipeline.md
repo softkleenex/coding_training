@@ -14,12 +14,12 @@ status: "Published"
 ## 한눈에 보기
 
 | 항목       | 내용                                                                                                                                                                                     |
-| ---------- | ---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- | ---------------------- |
+| ---------- | ---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
 | Platform   | `Kaggle`                                                                                                                                                                                 |
 | Local repo | `kaggle-medgemma-clinical-rag-pipeline`                                                                                                                                                  |
 | GitHub     | [kaggle-medgemma-clinical-rag-pipeline](https://github.com/softkleenex/kaggle-medgemma-clinical-rag-pipeline)                                                                            |
 | Blog URL   | [https://softkleenex.github.io/coding_training/kaggle/kaggle-medgemma-clinical-rag-pipeline](https://softkleenex.github.io/coding_training/kaggle/kaggle-medgemma-clinical-rag-pipeline) |
-| Category   | [[index                                                                                                                                                                                  | Kaggle 대회 아카이브]] |
+| Category   | [Kaggle 대회 아카이브](./)                                                                                                                                                               |
 
 ## 기록 포인트
 

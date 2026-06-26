@@ -14,12 +14,12 @@ Kaggle Playground Series S6E2 - Heart Disease Prediction 🫀 작업을 블로�
 ## 한눈에 보기
 
 | 항목       | 내용                                                                                                                                                                         |
-| ---------- | ---------------------------------------------------------------------------------------------------------------------------------------------------------------------------- | ---------------------- |
+| ---------- | ---------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
 | Platform   | `Kaggle`                                                                                                                                                                     |
 | Local repo | `kaggle-heart-disease-prediction`                                                                                                                                            |
 | GitHub     | [kaggle-heart-disease-prediction](https://github.com/softkleenex/kaggle-heart-disease-prediction)                                                                            |
 | Blog URL   | [https://softkleenex.github.io/coding_training/kaggle/kaggle-heart-disease-prediction](https://softkleenex.github.io/coding_training/kaggle/kaggle-heart-disease-prediction) |
-| Category   | [[index                                                                                                                                                                      | Kaggle 대회 아카이브]] |
+| Category   | [Kaggle 대회 아카이브](./)                                                                                                                                                   |
 
 ## 기록 포인트
 

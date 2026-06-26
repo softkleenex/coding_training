@@ -14,12 +14,12 @@ Dacon Base Template 작업을 블로그와 GitHub 사이에서 추적하기 위�
 ## 한눈에 보기
 
 | 항목       | 내용                                                                                                                             |
-| ---------- | -------------------------------------------------------------------------------------------------------------------------------- | --------------------- |
+| ---------- | -------------------------------------------------------------------------------------------------------------------------------- |
 | Platform   | `DACON`                                                                                                                          |
 | Local repo | `dacon-base`                                                                                                                     |
 | GitHub     | [dacon-base](https://github.com/softkleenex/dacon-base)                                                                          |
 | Blog URL   | [https://softkleenex.github.io/coding_training/dacon/dacon-base](https://softkleenex.github.io/coding_training/dacon/dacon-base) |
-| Category   | [[index                                                                                                                          | DACON 대회 아카이브]] |
+| Category   | [DACON 대회 아카이브](./)                                                                                                        |
 
 ## 기록 포인트
 

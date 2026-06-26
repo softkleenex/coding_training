@@ -14,12 +14,12 @@ status: "Published"
 ## 한눈에 보기
 
 | 항목       | 내용                                                                                                                                         |
-| ---------- | -------------------------------------------------------------------------------------------------------------------------------------------- | ---------------------- |
+| ---------- | -------------------------------------------------------------------------------------------------------------------------------------------- |
 | Platform   | `Kaggle`                                                                                                                                     |
 | Local repo | `kaggle-hai-2025`                                                                                                                            |
 | GitHub     | [kaggle-hai-2025](https://github.com/softkleenex/kaggle-hai-2025)                                                                            |
 | Blog URL   | [https://softkleenex.github.io/coding_training/kaggle/kaggle-hai-2025](https://softkleenex.github.io/coding_training/kaggle/kaggle-hai-2025) |
-| Category   | [[index                                                                                                                                      | Kaggle 대회 아카이브]] |
+| Category   | [Kaggle 대회 아카이브](./)                                                                                                                   |
 
 ## 기록 포인트
 
