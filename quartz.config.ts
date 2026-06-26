@@ -8,8 +8,8 @@ import * as Plugin from "./quartz/plugins"
  */
 const config: QuartzConfig = {
   configuration: {
-    pageTitle: "Dev Blog",
-    pageTitleSuffix: "",
+    pageTitle: "Softkleenex Dev Blog",
+    pageTitleSuffix: " | Softkleenex",
     enableSPA: true,
     enablePopovers: true,
     analytics: {

@@ -1,11 +1,12 @@
 ---
 title: "🏠 Home"
+description: "Softkleenex의 개발 블로그입니다. 백준, AtCoder 알고리즘 풀이와 DACON, Kaggle 머신러닝 대회 회고를 정리합니다."
 ---
 
 # 👋 안녕하세요, Softkleenex 입니다!
 
 > [!quote] "배움을 멈추지 않는 개발자"
-> 이 공간은 저의 알고리즘 문제 풀이 여정과 기술적인 성장 기록이 담긴 **[Obsidian](https://obsidian.md/) 기반 기술 블로그**입니다.
+> 이 공간은 저의 알고리즘 문제 풀이, DACON과 Kaggle 머신러닝 대회 회고, 기술적인 성장 기록이 담긴 **[Obsidian](https://obsidian.md/) 기반 기술 블로그**입니다.
 > 치열하게 고민했던 로직과 에러 해결 과정을 날것 그대로, 하지만 구조적으로 아카이빙하고 있습니다.
 
 ---

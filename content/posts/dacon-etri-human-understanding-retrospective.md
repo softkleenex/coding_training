@@ -1,5 +1,6 @@
 ---
 title: "DACON ETRI Human Understanding 대회 회고: 점수보다 기록이 오래 남았다"
+description: "DACON ETRI Human Understanding AI Paper Challenge를 마친 뒤 로컬 CV와 public leaderboard gap, 제출 운영, 기록 관리에서 배운 점을 정리한 회고입니다."
 tags:
   - DACON
   - Machine-Learning
