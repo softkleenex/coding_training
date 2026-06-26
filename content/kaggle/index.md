@@ -16,6 +16,8 @@ Kaggle 대회에 참여하며 만든 코드 저장소와 회고를 연결해두�
   - GitHub: [kaggle-arc-prize-2025](https://github.com/softkleenex/kaggle-arc-prize-2025)
 - **[[kaggle-dpc-tate|Translating Ancient Akkadian to English (Kaggle: Deep Past Initiative)]]**
   - GitHub: 로컬 repo에 origin remote가 아직 설정되어 있지 않습니다.
+- **[[hlftc|한화생명 미래금융인재 공모전 - LifeTwin AI]]**
+  - GitHub: Git repo로 초기화되어 있지 않은 로컬 공모전 폴더입니다.
 - **[[kaggle-hai-2025|🕵️‍♂️ HAI 2025 Deepfake Detection Challenge]]**
   - GitHub: [kaggle-hai-2025](https://github.com/softkleenex/kaggle-hai-2025)
 - **[[kaggle-heart-disease-prediction|Kaggle Playground Series S6E2 - Heart Disease Prediction 🫀]]**
