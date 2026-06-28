@@ -22,7 +22,7 @@ ML 대회와는 완전히 다른 종류의 작업이었다. 점수식이나 CV�
 | ---------- | -------------------------------------------------------------------------------------------------------------------------------------------- |
 | Platform   | `DACON`                                                                                                                                      |
 | Local repo | `dacon-webgamming`                                                                                                                           |
-| GitHub     | origin remote 또는 Git repo가 아직 설정되어 있지 않습니다.                                                                                   |
+| GitHub     | [dacon-webgamming](https://github.com/softkleenex/dacon-webgamming)                                                                          |
 | Blog URL   | [https://softkleenex.github.io/coding_training/dacon/dacon-webgamming](https://softkleenex.github.io/coding_training/dacon/dacon-webgamming) |
 | Category   | [DACON 대회 아카이브](./)                                                                                                                    |
 | Game       | `Just One Click`                                                                                                                             |
@@ -47,13 +47,13 @@ ML 대회와는 완전히 다른 종류의 작업이었다. 점수식이나 CV�
 
 가장 잘한 판단은 아이디어를 끝까지 줄인 것이다. 기획 문서에는 여러 후보가 있었지만, 최종적으로 원 버튼 패링 액션을 선택하면서 구현 경로가 선명해졌다. 덕분에 조작, 충돌, 보스 패턴, 사운드, 연출이 같은 방향으로 쌓였다.
 
-아쉬운 점은 배포와 공개 저장소 정리가 대회 산출물만큼 깔끔하지 않았다는 점이다. 현재 로컬 레포는 존재하지만 GitHub origin remote가 연결되어 있지 않고, 블로그에서는 코드 링크 대신 작업 기록만 연결하고 있다. 포트폴리오로 쓰려면 playable demo, GitHub repo, 짧은 gameplay capture까지 붙여야 완성도가 훨씬 좋아질 것이다.
+아쉬운 점은 playable demo와 gameplay capture까지 이어지는 공개 산출물 정리가 늦었다는 점이다. 코드는 GitHub에 공개했지만, 포트폴리오로 쓰려면 실제로 눌러볼 수 있는 배포 URL과 짧은 gameplay capture까지 붙여야 완성도가 훨씬 좋아질 것이다.
 
 이 작업은 이후 경쟁형 ML 대회에도 은근히 도움이 됐다. 해커톤에서는 “작게 만들고, 빨리 확인하고, 사용자가 느끼는 핵심 피드백에 집중한다”는 감각이 중요하다. ML에서도 feature를 무작정 늘리기보다, 점수를 움직이는 가장 짧은 loop를 찾아야 한다는 점에서 꽤 닮아 있었다.
 
 ## 연결
 
 - 카테고리: [[index|DACON 대회 아카이브]]
-- GitHub repo: 아직 공개 origin remote가 없습니다.
+- GitHub repo: [dacon-webgamming](https://github.com/softkleenex/dacon-webgamming)
 - 전체 아카이브 점검: [[../posts/competition-archive-audit-2026-06-26|Competition archive audit]]
 - 이 페이지: [https://softkleenex.github.io/coding_training/dacon/dacon-webgamming](https://softkleenex.github.io/coding_training/dacon/dacon-webgamming)
