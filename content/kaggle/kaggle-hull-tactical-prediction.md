@@ -82,11 +82,11 @@ repo에는 `v24` 계열 validation 결과가 남아 있다. walk-forward validat
 
 이 프로젝트는 점수만 보면 아쉬운 결과다. 하지만 "public trap을 의심하고 보수적으로 갔다"는 판단은 맞았고, "static model만으로 live market을 버티기 어렵다"는 교훈도 선명하게 남았다. 포트폴리오 관점에서는 이 실패가 오히려 좋은 재료다. 성공한 모델보다, 깨진 모델을 어디까지 설명할 수 있는지가 더 오래 남을 때가 있다.
 
-## 기록 포인트
+## 더 읽을거리
 
-- Kaggle 대회 문제를 풀며 만든 코드 저장소와 블로그 기록을 연결합니다.
-- 상세 구현과 코드 스니펫은 repo README에서 확인할 수 있습니다.
-- 이 페이지는 public leaderboard 회피, live regime shift, risk management 교훈을 중심으로 읽기 좋게 정리합니다.
+- 상세 구현과 코드 스니펫은 repo README에서 확인할 수 있다.
+- 이 글은 public leaderboard 회피, live regime shift, risk management 교훈을 중심으로 요약했다.
+- 특히 walk-forward validation이 leakage를 줄여도 frozen live submission의 regime shift 대응까지 보장하지는 않는다는 점을 실패 사례로 남겼다.
 
 ## 연결
 

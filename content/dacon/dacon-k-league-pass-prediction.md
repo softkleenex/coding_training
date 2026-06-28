@@ -65,11 +65,11 @@ status: "Published"
 
 이 프로젝트는 상위 6.8%라는 결과도 좋았지만, 그보다 "단순한 baseline이 왜 강한지"를 실제로 체감한 경험으로 남았다. AI 대회에서 멋진 모델보다 검증을 버티는 구조가 더 중요할 때가 있다는 걸 배웠다.
 
-## 기록 포인트
+## 더 읽을거리
 
-- DACON 대회 문제를 풀며 만든 코드 저장소와 블로그 기록을 연결합니다.
-- 상세 제출 기록과 구현 구조는 repo README와 docs에서 확인할 수 있습니다.
-- 이 페이지는 delta prediction, pseudo-labeling, LOGO CV, Zone 6x6 baseline의 교훈을 중심으로 정리합니다.
+- 상세 제출 기록과 구현 구조는 repo README와 `analysis_results/`, `docs/`에 남겨 두었다.
+- 이 글은 delta prediction, pseudo-labeling, LOGO CV, Zone 6x6 baseline의 교훈을 중심으로 요약했다.
+- 특히 public score 개선보다 private/OOD 일반화를 더 믿을 수 있게 만든 검증 방식이 핵심 기록이다.
 
 ## 연결
 

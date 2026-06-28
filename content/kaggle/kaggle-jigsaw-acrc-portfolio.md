@@ -61,11 +61,11 @@ LLM/LoRA inference에서는 다음 검사가 필요하다.
 
 이 대회에서는 DeBERTa/SetFit 계열 접근으로 최종 `0.904 ROC-AUC`까지 갔지만, 더 오래 남은 건 LoRA 실패 분석이었다. 좋은 포트폴리오 기록은 항상 최고 점수만 보여줄 필요는 없다. 조용히 망가지는 시스템을 어떻게 추적했는지 보여주는 것도 실전 ML 역량에 가깝다.
 
-## 기록 포인트
+## 더 읽을거리
 
-- Kaggle 대회 문제를 풀며 만든 코드 저장소와 블로그 기록을 연결합니다.
-- 상세 실패 분석은 repo의 `docs/FAILURE_ANALYSIS.md`에서 확인할 수 있습니다.
-- 이 페이지는 LoRA compatibility, degenerate output, production ML debugging 교훈을 중심으로 정리합니다.
+- 상세 실패 분석은 repo의 `docs/FAILURE_ANALYSIS.md`에서 확인할 수 있다.
+- 이 글은 LoRA compatibility, degenerate output, production ML debugging 교훈을 중심으로 요약했다.
+- 특히 adapter/base model mismatch가 crash 없이 all-zero prediction으로 이어질 수 있다는 점을 output sanity check 사례로 남겼다.
 
 ## 연결
 

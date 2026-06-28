@@ -86,11 +86,11 @@ FAISS 기반 RAG engine은 Kaggle dataset mount 경로 때문에 자주 깨졌�
 
 이 프로젝트는 대회 점수표로만 설명하기 어려운 Impact Challenge였다. 하지만 포트폴리오 관점에서는 오히려 좋다. 모델을 붙이는 데서 끝나지 않고, 실제 cloud execution 제약 속에서 의료 AI pipeline을 끝까지 움직이게 만든 기록이기 때문이다.
 
-## 기록 포인트
+## 더 읽을거리
 
-- Kaggle 대회 문제를 풀며 만든 코드 저장소와 블로그 기록을 연결합니다.
-- 상세 코드, demo video, 실행 구조는 repo README에서 확인할 수 있습니다.
-- 이 페이지는 의료 VLM/RAG pipeline에서 겪은 cloud, tokenization, pathing 병목을 중심으로 정리합니다.
+- 상세 코드, demo video, 실행 구조는 repo README에서 확인할 수 있다.
+- 이 글은 의료 VLM/RAG pipeline에서 겪은 cloud, tokenization, pathing 병목을 중심으로 요약했다.
+- 특히 gated model access, processor-native multimodal prompt, Kaggle dataset discovery는 이후 의료 AI 실험에도 재사용할 만한 운영 패턴이다.
 
 ## 연결
 

@@ -80,11 +80,11 @@ repo의 분석 문서에서는 이 패러다임을 `Regression -> Selection + Mi
 
 이 프로젝트는 "AI 대회에서 도메인 물리를 어떻게 모델링에 넣을 수 있는가"를 보여주는 좋은 사례로 남았다. 점수도 중요했지만, 더 오래 남은 건 1cm metric에 맞춰 문제를 다시 해석했던 과정이다.
 
-## 기록 포인트
+## 더 읽을거리
 
-- DACON 대회 문제를 풀며 만든 코드 저장소와 블로그 기록을 연결합니다.
-- 상세 기술 백서와 실험 기록은 repo README와 docs에서 확인할 수 있습니다.
-- 이 페이지는 3D 물리 공간, metric 해석, 정렬 오류 디버깅, physics-informed selector 중심으로 정리합니다.
+- 상세 기술 백서와 실험 기록은 repo README와 docs에 남겨 두었다.
+- 이 글은 3D 물리 공간, metric 해석, 정렬 오류 디버깅, physics-informed selector 중심으로 요약했다.
+- 특히 `sample_submission.csv` 기준 재정렬과 ID 기반 merge는 이후 대회에서도 계속 재사용할 만한 제출 안정성 패턴이다.
 
 ## 연결
 
