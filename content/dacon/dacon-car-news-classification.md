@@ -4,12 +4,16 @@ description: "Softkleenex의 DACON 프로젝트 노트입니다. DACON 자동차
 tags:
   - Competition
   - DACON
+  - Prompt Engineering
+  - GPT-4o-mini
 status: "Published"
 ---
 
 # DACON 자동차 뉴스 분류 Prompt Engineering
 
-DACON 자동차 뉴스 분류 Prompt Engineering 작업을 블로그와 GitHub 사이에서 추적하기 위한 포트폴리오 노트입니다. 이 페이지는 대회 문제, 실험 기록, 제출 운영, 회고 글을 찾아가기 위한 허브 역할을 합니다.
+짧은 한국어 프롬프트가 긴 설명형 프롬프트보다 강했던 대회였다. 자동차 관련 뉴스면 `1`, 아니면 `0`을 내는 단순한 이진 분류였지만, 제출물은 코드나 모델이 아니라 프롬프트 한 줄이었다. 평가도 사람이 읽는 방식이 아니라 `GPT-4o-mini`, `temperature=0.4` 조건에서 돌아갔고, 점수는 정확도와 프롬프트 길이를 같이 보았다.
+
+처음에는 “자동차 제조, 판매, 전기차, 부품, 배터리”처럼 기준을 자세히 적어야 안정적일 것 같았다. 그런데 실제 기록은 반대에 가까웠다. 제공 샘플 46개에서는 `자동차 아니면 0 맞으면 1`이 `46/46`을 맞혔고, 실제 제출 최고 점수는 쉼표와 마침표가 들어간 `자동차 아니면 0, 맞으면 1.`의 public `0.856`이었다. 이 프로젝트는 거창한 프롬프트 기교보다 문제 경계, 출력 형식, 언어 선택, 과적합 검증이 더 중요하다는 쪽으로 결론이 났다.
 
 ## 한눈에 보기
 
@@ -20,15 +24,56 @@ DACON 자동차 뉴스 분류 Prompt Engineering 작업을 블로그와 GitHub �
 | GitHub     | [dacon-car-news-classification](https://github.com/softkleenex/dacon-car-news-classification)                                                                          |
 | Blog URL   | [https://softkleenex.github.io/coding_training/dacon/dacon-car-news-classification](https://softkleenex.github.io/coding_training/dacon/dacon-car-news-classification) |
 | Category   | [DACON 대회 아카이브](./)                                                                                                                                              |
+| Task       | 자동차 뉴스 여부 이진 분류, prompt-only 제출                                                                                                                           |
+| Evaluator  | `GPT-4o-mini`, `temperature=0.4`                                                                                                                                       |
+| Best LB    | `0.856`                                                                                                                                                                |
 
-## 기록 포인트
+## 대회 구조
 
-- DACON 대회 문제를 풀며 만든 코드 저장소와 블로그 기록을 연결합니다.
-- 데이터 처리, 모델링, 검증, 제출 운영에서 남긴 실험 메모를 repo README와 문서에서 이어서 확인할 수 있습니다.
-- 대회가 끝난 뒤에는 별도 회고 글을 추가해 성공한 판단과 실패한 판단을 분리해 기록합니다.
+점수식은 `0.9 * Accuracy + 0.1 * sqrt(1 - (bytes / 3000)^2)`였다. 길이 점수가 10% 들어가지만, 30바이트 안팎의 짧은 프롬프트에서는 사실상 정확도가 대부분을 결정했다. 그래서 핵심 질문은 “얼마나 짧게 쓰느냐”가 아니라 “조건을 잃지 않는 선에서 얼마나 짧게 유지하느냐”였다.
+
+이 제약 때문에 일반적인 ML 대회와 다른 운영 감각이 필요했다. feature를 추가하거나 모델을 앙상블하는 대신, 문장 하나에서 다음을 동시에 맞춰야 했다.
+
+- 자동차 관련이면 `1`, 무관하면 `0`이라는 조건이 명확해야 한다.
+- 모델이 설명을 붙이지 않고 숫자만 내도록 유도해야 한다.
+- 한국어 뉴스 문맥에서 자동차, 차량, EV, 배터리, 모빌리티의 경계를 안정적으로 잡아야 한다.
+- 프롬프트가 제공 샘플 46개에만 맞춰진 우연한 문장인지 따로 의심해야 한다.
+
+## 실험 기록
+
+가장 좋은 로컬 프롬프트는 `자동차 아니면 0 맞으면 1`이었다. 제공 샘플 `46/46`을 맞혔고, 바이트 수도 짧았다. 다만 실제 제출 최고 프롬프트는 `자동차 아니면 0, 맞으면 1.`였고 public score는 `0.856`이었다. 로컬 최적과 리더보드 최적이 완전히 일치하지 않은 점이 이 대회의 중요한 기록이다.
+
+| 구분                         | 결과                         |
+| ---------------------------- | ---------------------------- |
+| Best public submission       | `0.856`                      |
+| Best submitted prompt        | `자동차 아니면 0, 맞으면 1.` |
+| Best local validation prompt | `자동차 아니면 0 맞으면 1`   |
+| Local validation             | `46/46`                      |
+| Synthetic robustness check   | `86.7%` on 30 samples        |
+| Korean prompt average        | `85.5%`                      |
+| English prompt average       | `73.9%`                      |
+
+한국어 프롬프트와 영어 프롬프트의 차이도 컸다. 같은 의미라도 한국어 평균이 `85.5%`, 영어 평균이 `73.9%`로 나왔다. 한국어 기사 분류에서는 평가 모델이 한국어 조건문을 더 안정적으로 따라간 셈이다.
+
+## 실패가 더 가르쳐준 것
+
+이 대회에서 가장 무서운 실패는 긴 프롬프트가 아니라 “조건이 빠진 짧은 프롬프트”였다. `자동차 1`처럼 너무 압축한 문장은 조건문이 아니어서 크게 무너졌다. `자동차=1, 기타=0`처럼 사람이 보기에는 명확한 표기도 실제 평가에서는 특수문자와 출력 형식 리스크가 커졌다.
+
+`차량`이라는 단어도 기대만큼 안정적이지 않았다. 전기차 배터리나 부품 뉴스 일부를 놓쳤고, 반대로 택시 서비스나 UAM처럼 넓은 모빌리티 맥락을 자동차로 끌고 갈 위험이 있었다. 이 문제의 경계는 “이동 수단 전반”이 아니라 “자동차 뉴스”였기 때문에, 단어 하나가 도메인 범위를 바꾸는 효과가 있었다.
+
+Chain-of-Thought 계열도 만능은 아니었다. `주제를 분석한 후 답하세요` 같은 process prompt는 로컬 정확도를 올릴 때가 있었지만, 길이가 늘고 출력에 설명이 섞일 가능성이 생겼다. prompt-only 대회에서는 모델을 더 생각하게 만드는 것보다, 채점기가 원하는 형식으로 안정적으로 수렴시키는 것이 더 실용적이었다.
+
+## 최종 판단
+
+최종적으로 이 저장소의 핵심 교훈은 단순함 자체가 아니라 검증된 단순함이었다. 짧은 프롬프트를 무작정 믿은 것이 아니라, 제공 샘플 전체 테스트, 언어별 비교, CoT 비교, 합성 데이터 30개 robustness check를 거쳐 “이 정도로 짧아도 조건이 살아 있다”는 쪽을 선택했다.
+
+가장 아쉬운 부분은 private 분포를 더 잘 추정하지 못한 점이다. 제공 샘플 `46/46`은 좋아 보였지만 합성 데이터에서는 `86.7%`로 내려갔다. 이 차이는 public `0.856`이라는 결과와도 잘 맞는다. 샘플을 완벽히 맞히는 프롬프트가 실제 평가셋을 완벽히 일반화한다는 뜻은 아니었다.
+
+그럼에도 포트폴리오 관점에서는 꽤 좋은 작은 실험이었다. 모델 학습 없이도 평가 모델의 언어 민감도, 출력 형식, 도메인 경계, leaderboard feedback을 하나씩 분리해서 확인했다. 큰 모델을 쓰는 시대에도, 문제를 한 줄로 어떻게 압축하느냐가 여전히 실험 대상이라는 걸 보여준 대회였다.
 
 ## 연결
 
-- 카테고리: [[index|DACON 대회 아카이브]]
 - GitHub repo: [dacon-car-news-classification](https://github.com/softkleenex/dacon-car-news-classification)
+- 카테고리: [[index|DACON 대회 아카이브]]
+- 전체 아카이브 점검: [[../posts/competition-archive-audit-2026-06-26|Competition archive audit]]
 - 이 페이지: [https://softkleenex.github.io/coding_training/dacon/dacon-car-news-classification](https://softkleenex.github.io/coding_training/dacon/dacon-car-news-classification)
