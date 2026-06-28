@@ -27,7 +27,7 @@ status: "Published"
 | ------------ | ------------------------------------------------------------------------------------------------------------------------ |
 | Platform     | `Competition / Portfolio`                                                                                                |
 | Local folder | `HLFTC`                                                                                                                  |
-| GitHub       | 아직 공개 origin remote가 없습니다.                                                                                      |
+| GitHub       | [hlftc](https://github.com/softkleenex/hlftc)                                                                            |
 | Blog URL     | [https://softkleenex.github.io/coding_training/kaggle/hlftc](https://softkleenex.github.io/coding_training/kaggle/hlftc) |
 | Category     | [Kaggle 대회 아카이브](./)                                                                                               |
 
@@ -108,6 +108,6 @@ status: "Published"
 ## 연결
 
 - 카테고리: [[index|Kaggle 대회 아카이브]]
-- GitHub repo: 아직 공개 origin remote가 없습니다.
+- GitHub repo: [hlftc](https://github.com/softkleenex/hlftc)
 - 감사 노트: [Softkleenex Archive 대회 기록 감사](../posts/competition-archive-audit-2026-06-26)
 - 이 페이지: [https://softkleenex.github.io/coding_training/kaggle/hlftc](https://softkleenex.github.io/coding_training/kaggle/hlftc)

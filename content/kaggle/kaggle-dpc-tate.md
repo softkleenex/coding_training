@@ -23,7 +23,7 @@ status: "Published"
 | ---------- | -------------------------------------------------------------------------------------------------------------------------------------------- |
 | Platform   | `Kaggle`                                                                                                                                     |
 | Local repo | `kaggle-dpc-tate`                                                                                                                            |
-| GitHub     | 아직 공개 origin remote가 없습니다.                                                                                                          |
+| GitHub     | [kaggle-dpc-tate](https://github.com/softkleenex/kaggle-dpc-tate)                                                                            |
 | Blog URL   | [https://softkleenex.github.io/coding_training/kaggle/kaggle-dpc-tate](https://softkleenex.github.io/coding_training/kaggle/kaggle-dpc-tate) |
 | Category   | [Kaggle 대회 아카이브](./)                                                                                                                   |
 
@@ -91,6 +91,6 @@ Akkadian transliteration은 일반적인 영어 tokenization과 잘 맞지 않�
 ## 연결
 
 - 카테고리: [[index|Kaggle 대회 아카이브]]
-- GitHub repo: 아직 공개 origin remote가 없습니다.
+- GitHub repo: [kaggle-dpc-tate](https://github.com/softkleenex/kaggle-dpc-tate)
 - 감사 노트: [Softkleenex Archive 대회 기록 감사](../posts/competition-archive-audit-2026-06-26)
 - 이 페이지: [https://softkleenex.github.io/coding_training/kaggle/kaggle-dpc-tate](https://softkleenex.github.io/coding_training/kaggle/kaggle-dpc-tate)
